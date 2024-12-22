@@ -10,7 +10,7 @@ Estimated time: 10 minutes
 * Access to the Internet
 * A working email address
 
-Do you already have an API key? Skip to [Step 3. Try using the key](#)
+Do you already have an API key? Skip to [Step 3](#step-3-use-the-key)
 
 ## Step 1. Request
 
@@ -26,7 +26,7 @@ _Figure 1: Web Form to Request a Census Data API Key_
 	3. Check the box to agree. 
 4. Press "Request Key".
 
-## Step 2. Activation
+## Step 2. Activate the key
 
 After submitting, you should almost immediately receive an email with subject line, "Census Data API Key Request".
 ![Screenshot of email from the Census Bureau API Team. Subject line, "Census Data API Key request. Email body includes the API key which has been censored, followed by a link to activate the key](images/email_API_key_string.png)
@@ -38,7 +38,7 @@ Until you click the link in this email, the key will not work yet!
 
 Click "Click here to activate your key".
 
-If you got this result, then proceed to [Step 3](#step-3-try-using-the-key)
+If you got this result, then proceed to [Step 3](#step-3-use-the-key)
 
 > **Success**
 > 
@@ -50,9 +50,9 @@ But, if you saw this error message...
 > 
 > You've  attempted to validate an unknown key. If it has been more than 48 hours since you submitted your request for this API key then the request has been removed from the system. Please request a new key and activate it within 48 hours.
 
-Then, expand [the accordion below](help-i-got-an-error-message) for a possible solution:
+Then, expand [the section below](#troubleshoot-error-message) for a possible solution:
 
-### Help, I got an error message!
+### Troubleshoot error message
 
 If you used your UCI email address (or similar institution's address), it might be due to changes made to the activation link via <a href="https://www.oit.uci.edu/services/communication-collaboration/proofpoint/">Proofpoint Email Security</a>. The process is shown in this diagram (note: the result URL is similar to the real output, but this is fake and for demonstration purposes.)</p>
 
@@ -68,7 +68,7 @@ _Figure 3: Example sequence of a link getting modified through Proofpoint email 
 			<ul><li>If it still doesn't work, then message me (<a href="mailto:tbtruon1@uci.edu" target="_blank" rel="noopener">tbtruon1@uci.edu</a>) for help!</li></ul>
 		</ol>
 
-## Step 3. Try using the key
+## Step 3. Use the key
 
 Now that your API key has been activated, let's see if this works.
 
@@ -87,6 +87,8 @@ One of the easiest ways is by simply using it on URLs, or through the website. W
 	> ["California","39538223","06"],
 
 Congrats! You just pulled Census data using their API key. 
+
+### What did we just do?
 
 Let's look at the URL again to take a closer look at the dataset specification and variables.
 
@@ -121,9 +123,12 @@ Here is what we find:
 
 Verify some numbers like for California.
 
+## Next Steps
+
 Now, for the assignment! 
 
 ## Resources
+
 * U.S. Census Bureau (July 30 2024). [Census Data API User Guide Website](https://www.census.gov/data/developers/guidance/api-user-guide.html)  or view the [PDF version](https://www.census.gov/content/dam/Census/data/developers/api-user-guide/api-user-guide.pdf). 
 *   U.S. Census Bureau (February 2020). [Using the Census Data API With the American Community Survey: What Data Users Need to Know](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_api_handbook_2020.pdf),  U.S. Government Printing Office, Washington, DC. 
 
