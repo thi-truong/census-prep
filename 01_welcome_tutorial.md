@@ -80,9 +80,9 @@ One of the easiest ways is by simply using it on URLs, or through the website. W
 
 1. Copy this link 
 `https://api.census.gov/data/2020/dec/dp?get=NAME&DP1_0001C&for=state:*&key=stringofcharactersandnumbers`
-and paste into your web browser. 
-3. Replace the last part after `key=`  with your API key. Press enter/navigate to the address.
-4. You should be directed to a .txt (plain text file), where the first 6 rows looks like this:
+2. Paste the link into your web browser, but do not press enter/go.
+3. Replace the last part after the equals sign in `key=stringofcharactersandnumbers` with your API key.
+4. Press enter/navigate to the address. You should be directed to a .txt (plain text file), where the first 6 rows looks like this:
 	> [["NAME","DP1_0001C","state"],
 	> ["Alabama","5024279","01"],
 	> ["Alaska","733391","02"],
