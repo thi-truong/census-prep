@@ -18,7 +18,7 @@ Do you already have an API key? Skip to [Step 3. Try using the key](#)
 
 ## Step 1. Request
 
-![Screenshot of US Census Bureau website. Request a U.S. Census Data API Key. Form fields for organization Name, email address, and a checkbox for "I agree to the terms of service". Submit button to request key](images/API_request_annotations.png)
+![Screenshot of US Census Bureau website. Request a U.S. Census Data API Key. Form fields for organization Name, email address, and a checkbox for "I agree to the terms of service". Submit button to request key](images/API_request.png)
 _Figure 1: Web Form to Request a Census Data API Key_  
 
 1. Go to [Request a U.S. Census Data API Key](https://api.census.gov/data/key_signup.html).
@@ -101,17 +101,17 @@ Let's look at the URL again to take a closer look at the dataset specification a
 `https://api.census.gov/data/2020/dec/dp?get=NAME&DP1_0001C&for=state:*&key=stringofcharactersandnumbers`
 
 Table explaining variables
-|Part | Phrase | Component  | Description |
+| Part | Phrase | Component  | Description |
 |--|--|--|--|
-| Specified Dataset| `"2020/dec/dp"`  | `2020`|  Year |
-| |  | `dec` |  Decennial Census |
-|  | | `dp`|  Detailed Profile |
-| Get? or Variable |  `"NAME"`  | `for=`|  is a predicate clause |
-| |    |`NAME` | provides the name of the geographic area(s) that you are using to limit your search |
-|Variable  |`"DP1_0001C"` | `DP1` | Data Profile Table 1 |
+| Specified Dataset | `"2020/dec/dp"` | `2020`|  Year |
+| | | `dec` | Decennial Census |
+| | | `dp`| Detailed Profile |
+| Get? or Variable |  `"NAME"`  | `for=`| is a predicate clause |
+| | | `NAME` | provides the name of the geographic area(s) that you are using to limit your search |
+| Variable  |`"DP1_0001C"` | `DP1` | Data Profile Table 1 |
 | | | `0001C` | 1 is column 1, and C is the third row. Total population count |
-|Predicate  | `"for=state*"`| `for=` |   is a predicate clause |
-| | |`state*` | is a geography, which specifies the geographic area(s) of interest. The asterisk * returns all states. |
+| Predicate  | `"for=state*"`| `for=` | is a predicate clause |
+| | | `state*` | is a geography, which specifies the geographic area(s) of interest. The asterisk * returns all states. |
 
 Here is what we find: 
 -   Data set source specified by `2020/dec/dp` which refers to the 2020 Decennial Census Detailed Profile (hence, "dec" and "dp")
