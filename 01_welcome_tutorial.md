@@ -1,18 +1,14 @@
 ﻿# Tutorial: How to get a Census API Key up and running
-This is a tutorial on how to get a Census API key and use it. Follow these steps to get your own key. Intended audience is UC Irvine folks, but it should work for anyone.
+The U.S. Census Bureau ("Census Bureau") offers some of its public data in machine-readable format via an Application Programming Interface ("**API**"). It is a PITA to get a lot of data. The detailed profiles are very limited. There are many ways to access Census data with an API key. You could call it through Python, R, thanks to packages like Pygris, tigris, etc. GIS servers and many web platforms use REST API.
 
+This is a tutorial on how to get a Census API key and use it with the URL feature. 
+
+Intended Audience: UCI folks, but it should work for anyone
 Estimated time: 10 minutes
 
 <a class="icon-check-plus"></a> **What you'll need**:
 * Access to the Internet
 * A working email address
-
-## Why?
-The U.S. Census Bureau ("Census Bureau") offers some of its public data in machine-readable format via an Application Programming Interface ("**API**"). It is a PITA to get a lot of data. The detailed profiles are very limited.
-
-There are many ways to access Census data with an API key. You could call it through Python, R, thanks to packages like Pygris, tigris, etc. GIS servers and many web platforms use REST API.
-
-Here, we will get a  key and use the website feature to get data. Follow Steps 1-3 below.
 
 Do you already have an API key? Skip to [Step 3. Try using the key](#)
 
