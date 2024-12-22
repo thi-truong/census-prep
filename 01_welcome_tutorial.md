@@ -45,20 +45,20 @@ Click "Click here to activate your key".
 If you got this result, then proceed to [Step 3](#step-3-try-using-the-key)
 
 > **Success**
+> 
 > Your request for a new API key has been successfully submitted. Please check your email. In a few minutes you should receive a message with instructions on how to activate your new key.
 
 But, if you saw this error message... 
 
 > **Error**
+> 
 > You've  attempted to validate an unknown key. If it has been more than 48 hours since you submitted your request for this API key then the request has been removed from the system. Please request a new key and activate it within 48 hours.
 
 Then, expand [the accordion below](help-i-got-an-error-message) for a possible solution:
 
 ### Help, I got an error message!
 
-<details>
-    <summary><h4>Click to expand</h4> </summary>
-    <p>If you used your UCI email address (or similar institution's address), it might be due to changes made to the activation link via <a href="https://www.oit.uci.edu/services/communication-collaboration/proofpoint/">Proofpoint Email Security</a>. The process is shown in this diagram (note: the result URL is similar to the real output, but this is fake and for demonstration purposes.)</p>
+If you used your UCI email address (or similar institution's address), it might be due to changes made to the activation link via <a href="https://www.oit.uci.edu/services/communication-collaboration/proofpoint/">Proofpoint Email Security</a>. The process is shown in this diagram (note: the result URL is similar to the real output, but this is fake and for demonstration purposes.)</p>
 
 ![Sequence diagram of a link to Reddit.com sent to UCI recipient, which is deemed malicious by Proofpoint. Link is rerouted with URL defense and the result is a link with a bunch of extra crap added to it. Example of link to https://www.reddit.com gets 120 characters appended to it](images/proofpoint_emails_process_edited.svg)
 _Figure 3: Example sequence of a link getting modified through Proofpoint email security process_  
@@ -71,23 +71,18 @@ _Figure 3: Example sequence of a link getting modified through Proofpoint email 
 			<li>You should see a success message now. Proceed to Step 3. </li>
 			<ul><li>If it still doesn't work, then message me (<a href="mailto:tbtruon1@uci.edu" target="_blank" rel="noopener">tbtruon1@uci.edu</a>) for help!</li></ul>
 		</ol>
-</details>
 
 ## Step 3. Try using the key
 
 Now that your API key has been activated, let's see if this works.
 
-One of the easiest ways is by simply using it on URLs, or through the website. When doing a web call, there is no software or program needed. You just specify your request in a URL and get the result, all in your web browser. 
-
-The schematic below breaks down the components of a URL that will use the API through the website. The variable list includes the variable(s) you are requesting. You can include up to 50 variables in a single API query (separated by commas). 
-
-![API URL address components include Census Data API (https://api.census.gov/data/), dataset (2020/dec/dp), query string (?), get function (get=) followed by variable list (NAME, DP1_0001C, for=state:*), including separators (ampersands), ending with your API key at the end](images/API_key_explainer_large.svg)
-_Figure 4: Decoding an API URL address: Components of a Census Data API URL query_  
+One of the easiest ways is by simply using it on URLs, or through the website. When doing a web call, there is no software or program needed. You just specify your request in a URL and get the result, all in your web browser. Let's try it now.
 
 1. Copy this link 
-`https://api.census.gov/data/2020/dec/dp?get=NAME&DP1_0001C&for=state:*&key=stringofcharactersandnumbers` and paste into your web browser. 
-2. Replace the last part after `key=`  with your API key. Press enter/navigate to the address.
-3. You should be directed to a .txt (plain text file), where the first 6 rows looks like this:
+`https://api.census.gov/data/2020/dec/dp?get=NAME&DP1_0001C&for=state:*&key=stringofcharactersandnumbers`
+and paste into your web browser. 
+3. Replace the last part after `key=`  with your API key. Press enter/navigate to the address.
+4. You should be directed to a .txt (plain text file), where the first 6 rows looks like this:
 	> [["NAME","DP1_0001C","state"],
 	> ["Alabama","5024279","01"],
 	> ["Alaska","733391","02"],
@@ -97,8 +92,13 @@ _Figure 4: Decoding an API URL address: Components of a Census Data API URL quer
 
 Congrats! You just pulled Census data using their API key. 
 
-Let's look at the URL again to take a closer look at the dataset specification and variables:
-`https://api.census.gov/data/2020/dec/dp?get=NAME&DP1_0001C&for=state:*&key=stringofcharactersandnumbers`
+Let's look at the URL again to take a closer look at the dataset specification and variables.
+
+The schematic below breaks down the components of the API URL query. The variable list includes the variable(s) you are requesting. 
+
+![API URL address components include Census Data API (https://api.census.gov/data/), dataset (2020/dec/dp), query string (?), get function (get=) followed by variable list (NAME, DP1_0001C, for=state:*), including separators (ampersands), ending with your API key at the end](images/API_key_explainer_large.svg)
+
+_Figure 4: Decoding an API URL address: Components of a Census Data API URL query_  
 
 Table explaining variables
 | Part | Phrase | Component  | Description |
@@ -115,7 +115,7 @@ Table explaining variables
 
 Here is what we find: 
 -   Data set source specified by `2020/dec/dp` which refers to the 2020 Decennial Census Detailed Profile (hence, "dec" and "dp")
--  In this data set:
+-  Variables. You can include up to 50 variables in a single API query (separated by commas). In this data set:
 	- `NAME` provides the name of the geographic area(s) that you are using to limit your search.
 	- `DP1_0001C` variable specifies total population. It is a count (not standardized or normalized). The letter C means we're on the 3rd row of a table containing a bunch of population observations (1 = men, 2 = women, I think)
 	- `for=state*` has a couple things going on.
@@ -132,3 +132,4 @@ Now, for the assignment!
 *   U.S. Census Bureau (February 2020). [Using the Census Data API With the American Community Survey: What Data Users Need to Know](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_api_handbook_2020.pdf),  U.S. Government Printing Office, Washington, DC. 
 
 > Written with [StackEdit](https://stackedit.io/).
+> Tutorial by <a>Thi Truong</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0" target="_blank">CC BY 4.0</a>
