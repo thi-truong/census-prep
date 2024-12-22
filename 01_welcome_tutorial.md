@@ -18,7 +18,8 @@ Do you already have an API key? Skip to [Step 3. Try using the key](#)
 
 ## Step 1. Request
 
-![Screenshot of US Census Bureau website. Request a U.S. Census Data API Key. Form fields for organization Name, email address, and a checkbox for "I agree to the terms of service". Submit button to request key](https://canvas.eee.uci.edu/courses/64790/files/29326279/preview?instfs=true)
+![Screenshot of US Census Bureau website. Request a U.S. Census Data API Key. Form fields for organization Name, email address, and a checkbox for "I agree to the terms of service". Submit button to request key](images/API_request_annotations.png)
+_Figure 1: Web Form to Request a Census Data API Key_  
 
 1. Go to [Request a U.S. Census Data API Key](https://api.census.gov/data/key_signup.html).
 2. Read the [Terms of service](https://www.census.gov/data/developers/about/terms-of-service.html) linked in the last field before the submit button.
@@ -32,14 +33,16 @@ Do you already have an API key? Skip to [Step 3. Try using the key](#)
 ## Step 2. Activation
 
 After submitting, you should almost immediately receive an email with subject line, "Census Data API Key Request".
-![Screenshot of email from the Census Bureau API Team. Subject line, "Census Data API Key request. Email body includes the API key which has been censored, followed by a link to activate the key](https://canvas.eee.uci.edu/courses/64790/files/29326280/preview?instfs=true)
+![Screenshot of email from the Census Bureau API Team. Subject line, "Census Data API Key request. Email body includes the API key which has been censored, followed by a link to activate the key](images/email_API_key_string.png)
+_Figure 2: Screenshot of activation email from Census Bureau_  
+
 I censored the part with my own key, but it a 40-character string of numbers and letters, which I'll refer to henceforth as  `stringofcharactersandnumbers`.
 
 Until you click the link in this email, the key will not work yet!
 
 Click "Click here to activate your key".
 
-If you got this result, then proceed to [Step 3. Try using the key](#)
+If you got this result, then proceed to [Step 3](#step-3-try-using-the-key)
 
 > **Success**
 > Your request for a new API key has been successfully submitted. Please check your email. In a few minutes you should receive a message with instructions on how to activate your new key.
@@ -49,7 +52,7 @@ But, if you saw this error message...
 > **Error**
 > You've  attempted to validate an unknown key. If it has been more than 48 hours since you submitted your request for this API key then the request has been removed from the system. Please request a new key and activate it within 48 hours.
 
-Then, expand this accordion [Help, I got an error message!](#) for a possible solution:
+Then, expand [the accordion below](help-i-got-an-error-message) for a possible solution:
 
 ### Help, I got an error message!
 
@@ -57,7 +60,8 @@ Then, expand this accordion [Help, I got an error message!](#) for a possible so
     <summary><h4>Click to expand</h4> </summary>
     <p>If you used your UCI email address (or similar institution's address), it might be due to changes made to the activation link via <a href="https://www.oit.uci.edu/services/communication-collaboration/proofpoint/">Proofpoint Email Security</a>. The process is shown in this diagram (note: the result URL is similar to the real output, but this is fake and for demonstration purposes.)</p>
 
-![Sequence diagram of a link to an external website sent to UCI recipient will be deemed malicious by Proofpoint, link will be rerouted with URL defense and the result is a link with a bunch of extra crap added to it. Example of link to https://www.reddit.com gets 120 characters appended to it](https://canvas.eee.uci.edu/courses/64790/files/29326351/preview?instfs=true)
+![Sequence diagram of a link to Reddit.com sent to UCI recipient, which is deemed malicious by Proofpoint. Link is rerouted with URL defense and the result is a link with a bunch of extra crap added to it. Example of link to https://www.reddit.com gets 120 characters appended to it](images/proofpoint_emails_process_edited.svg)
+_Figure 3: Example sequence of a link getting modified through Proofpoint email security process_  
 
 <p>Thankfully, you can still identify the original link in the mess. It is preceded by and precedes two underscores in a row (?? what security?? ).  Try these steps:</p>
 	    <ol><li>Right click the link text "click here to activate your key". Select "Copy link address"</li>
@@ -77,7 +81,8 @@ One of the easiest ways is by simply using it on URLs, or through the website. W
 
 The schematic below breaks down the components of a URL that will use the API through the website. The variable list includes the variable(s) you are requesting. You can include up to 50 variables in a single API query (separated by commas). 
 
-![Decoding an API URL address: Components include Census Data API (https://api.census.gov/data/), dataset (2020/dec/dp), query string (?), get function (get=) followed by variable list (NAME, DP1_0001C, for=state:*), including separators (ampersands), ending with your API key at the end](https://canvas.eee.uci.edu/courses/64790/files/29326419/preview?instfs=true)
+![API URL address components include Census Data API (https://api.census.gov/data/), dataset (2020/dec/dp), query string (?), get function (get=) followed by variable list (NAME, DP1_0001C, for=state:*), including separators (ampersands), ending with your API key at the end](images/API_key_explainer_large.svg)
+_Figure 4: Decoding an API URL address: Components of a Census Data API URL query_  
 
 1. Copy this link 
 `https://api.census.gov/data/2020/dec/dp?get=NAME&DP1_0001C&for=state:*&key=stringofcharactersandnumbers` and paste into your web browser. 
