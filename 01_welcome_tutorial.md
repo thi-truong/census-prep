@@ -94,7 +94,7 @@ Let's look at the URL again to take a closer look at the dataset specification a
 
 The schematic below breaks down the components of the API URL query. The variable list includes the variable(s) you are requesting. 
 
-![API URL address components include Census Data API (https://api.census.gov/data/), dataset (2020/dec/dp), query string (?), get function (get=) followed by variable list (NAME, DP1_0001C, for=state:*), including separators (ampersands), ending with your API key at the end](images/API_key_explainer_large.svg)
+![API URL address components include Census Data API (https://api.census.gov/data/), dataset (2020/dec/dp), query string (?), get function (get=) followed by variable list (NAME, DP1_0001C, for=state:*), including separators (ampersands), ending with your API key at the end](images/API_key_explainer_text.svg)
 
 _Figure 4: Decoding an API URL address: Components of a Census Data API URL query_  
 
