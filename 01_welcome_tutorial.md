@@ -69,14 +69,19 @@ If you used your UCI email address (or similar institution's address), it might 
 ![Sequence diagram of a link to Reddit.com sent to UCI recipient, which is deemed malicious by Proofpoint. Link is rerouted with URL defense and the result is a link with a bunch of extra crap added to it. Example of link to https://www.reddit.com gets 120 characters appended to it](images/proofpoint_emails_process_edited.svg)
 _Figure 3: Example sequence of a link getting modified through Proofpoint email security process_  
 
-<p>Thankfully, you can still identify the original link in the mess. It is preceded by and precedes two underscores in a row (?? what security?? ).  Try these steps:</p>
-	    <ol><li>Right click the link text "click here to activate your key". Select "Copy link address"</li>
-			<li>Paste the URL in a text editor. </li>
-			<li>Identify the original URL. It should begin with<code>https://api.census...</code> and end with a string of numbers and letters right before <code>__;!!</code></li>
-			<li>Copy this URL segment. Paste it into your browser's address bar. Press enter/go to the page. </li>
-			<li>You should see a success message now. Proceed to Step 3. </li>
-			<ul><li>If it still doesn't work, then message me (<a href="mailto:tbtruon1@uci.edu" target="_blank" rel="noopener">tbtruon1@uci.edu</a>) for help!</li></ul>
-		</ol>
+Thankfully, you can still identify the original link in the mess. It is preceded by and precedes two underscores in a row (?? what security?? ).  Try these steps:
+
+Right click the link text "click here to activate your key". Select "Copy link address"
+
+Paste the URL in a text editor. 
+
+Identify the original URL. It should begin with<code>https://api.census...</code> and end with a string of numbers and letters right before <code>__;!!</code>
+
+Copy this URL segment. Paste it into your browser's address bar. Press enter/go to the page. 
+
+You should see a success message now. Proceed to Step 3. 
+
+If it still doesn't work, then message me (<a href="mailto:tbtruon1@uci.edu" target="_blank" rel="noopener">tbtruon1@uci.edu</a>) for help!
 
 ## Step 3. Use the key
 
