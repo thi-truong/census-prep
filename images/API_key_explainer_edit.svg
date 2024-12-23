@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1375.94 249.08">
+  <defs>
+    <style>
+      .x, .y, .z, .aa, .ab {
+        stroke-width: 0px;
+      }
+
+      .x, .z, .ac {
+        fill: #6d88c4;
+      }
+
+      .x, .aa {
+        opacity: .2;
+      }
+
+      .ad {
+        letter-spacing: 0em;
+      }
+
+      .ad, .ae, .af {
+        fill: #231f20;
+      }
+
+      .ag, .ah, .ai, .ae {
+        letter-spacing: 0em;
+      }
+
+      .ag, .aj {
+        fill: #f26322;
+      }
+
+      .ak {
+        stroke: #6d88c4;
+      }
+
+      .ak, .al, .am, .an, .ao, .ap, .aq, .ar, .as {
+        fill: none;
+      }
+
+      .ak, .al, .as {
+        stroke-width: 1.5px;
+      }
+
+      .ak, .am, .an, .ao, .ap, .aq, .ar, .as {
+        stroke-linecap: round;
+      }
+
+      .at {
+        fill: #292651;
+        letter-spacing: 0em;
+      }
+
+      .ah, .au {
+        fill: #fcaf17;
+      }
+
+      .y, .av {
+        fill: #007554;
+      }
+
+      .au, .av, .aj, .aw, .af, .ac {
+        font-family: Articulate-Bold, Articulate;
+        font-weight: 700;
+      }
+
+      .au, .av, .aj, .aw, .af, .ac, .ax {
+        font-size: 24px;
+      }
+
+      .ai {
+        fill: #2e456d;
+      }
+
+      .al {
+        stroke: #007554;
+        stroke-miterlimit: 10;
+      }
+
+      .am, .an, .ao, .ap, .aq, .ar {
+        stroke-width: 2px;
+      }
+
+      .am, .ap, .aq {
+        stroke-linejoin: round;
+      }
+
+      .am, .ar {
+        stroke: #f26322;
+      }
+
+      .aa, .ab, .aw {
+        fill: #6c63ac;
+      }
+
+      .an, .ao, .ar {
+        opacity: .95;
+      }
+
+      .an, .aq {
+        stroke: #fcaf17;
+      }
+
+      .ao, .ap, .ay {
+        stroke: #231f20;
+      }
+
+      .az {
+        letter-spacing: -.02em;
+      }
+
+      .as {
+        stroke: #6c63ac;
+      }
+
+      .ba {
+        letter-spacing: 0em;
+      }
+
+      .ay {
+        fill: #009e73;
+        opacity: .3;
+      }
+
+      .bb {
+        letter-spacing: -.09em;
+      }
+
+      .ax {
+        font-family: Consolas, Consolas;
+      }
+    </style>
+  </defs>
+  <g id="a" data-name="Annotations">
+    <g id="b" data-name="&amp;amp; separators">
+      <g id="c" data-name="Layer 4">
+        <rect id="d" data-name="&amp;amp; highlight" class="x" x="931.6" y="97.68" width="16.4" height="30.5"/>
+        <rect id="e" data-name="&amp;amp; highlight" class="x" x="772.59" y="97.68" width="16.4" height="30.5"/>
+        <rect id="f" data-name="&amp;amp; highlight" class="x" x="640.74" y="97.68" width="14.31" height="30.5"/>
+      </g>
+      <text class="ac" transform="translate(716.53 243.75)"><tspan x="0" y="0">separators</tspan></text>
+      <g id="g" data-name="arrows">
+        <g id="h" data-name="arrow">
+          <g>
+            <line class="ak" x1="654.39" y1="148.6" x2="701.05" y2="209.36"/>
+            <polygon class="z" points="647.94 140.2 652.19 155.75 654.87 149.23 661.86 148.33 647.94 140.2"/>
+          </g>
+        </g>
+        <g id="i" data-name="arrow">
+          <g>
+            <line class="ak" x1="771.59" y1="148.68" x2="771.59" y2="209.36"/>
+            <polygon class="z" points="771.59 138.09 765.49 153.01 771.59 149.47 777.68 153.01 771.59 138.09"/>
+          </g>
+        </g>
+        <g id="j" data-name="arrow">
+          <g>
+            <line class="ak" x1="916.18" y1="153.45" x2="874.26" y2="211.16"/>
+            <polygon class="z" points="922.41 144.88 908.7 153.37 915.72 154.09 918.57 160.54 922.41 144.88"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="k" data-name="data/2020/dec/dp">
+      <g id="l" data-name="curly brace">
+        <path class="an" d="M311.23,90.47c-.12-3.64.61-8.18,2.59-10.66,1.31-1.62,3.16-1.72,4.87-1.72,28.64-.02,57.29.04,85.93-.02,4.21.24,7.61-4.01,7.77-9.88"/>
+        <path class="aq" d="M513.77,90.47c.12-3.64-.61-8.18-2.58-10.66-1.31-1.62-3.15-1.72-4.86-1.72-28.61-.02-57.23.04-85.83-.02-4.21.24-7.6-4.01-7.76-9.88"/>
+      </g>
+      <text class="au" transform="translate(375.12 27.12)"><tspan x="0" y="0">Dataset</tspan></text>
+    </g>
+    <g id="m" data-name="get=NAME...">
+      <g id="n" data-name="curly brace">
+        <path class="ar" d="M540.01,90.47c-.22-3.64,1.14-8.18,4.84-10.66,2.45-1.62,5.92-1.72,9.12-1.72,53.66-.02,107.35.04,160.99-.02,7.9.24,14.26-4.01,14.56-9.88"/>
+        <path class="am" d="M919.52,90.47c.22-3.64-1.14-8.18-4.84-10.66-2.45-1.62-5.91-1.72-9.11-1.72-53.6-.02-107.23.04-160.82-.02-7.89.24-14.25-4.01-14.54-9.88"/>
+      </g>
+      <text class="aj" transform="translate(562.53 27.41)"><tspan x="0" y="0">Get function and variables list</tspan></text>
+    </g>
+    <g id="o" data-name="?">
+      <rect id="p" data-name="? highlight" class="aa" x="521.08" y="98.8" width="12.58" height="30.5"/>
+      <g id="q" data-name="arrow">
+        <g>
+          <line class="as" x1="527.64" y1="148.52" x2="527.64" y2="209.36"/>
+          <polygon class="ab" points="522.08 152.73 527.64 150.37 533.19 152.73 527.64 139.56 522.08 152.73"/>
+        </g>
+      </g>
+      <text class="aw" transform="translate(432.39 243.75)"><tspan x="0" y="0">query string begins</tspan></text>
+    </g>
+    <g id="r" data-name="key=string">
+      <rect id="s" data-name="API key string highlight" class="ay" x="1000.93" y="97.68" width="374.51" height="30.5"/>
+      <text class="av" transform="translate(1000.93 20.38)"><tspan class="bb" x="0" y="0">Y</tspan><tspan x="13.8" y="0">our API key goes he</tspan><tspan class="az" x="237.86" y="0">r</tspan><tspan class="ba" x="246.77" y="0">e</tspan></text>
+      <g id="t" data-name="API key arrow">
+        <g>
+          <path class="al" d="M1162.02,41.26c-1.05,1.33-2.29,3.36-2.32,5.85-.07,4.76,4.29,7.8,6.32,10.38,2.49,3.17,3.92,8.75.81,19.26"/>
+          <polygon class="y" points="1163.13 86.67 1162.48 70.57 1167.01 75.97 1173.95 74.72 1163.13 86.67"/>
+        </g>
+      </g>
+    </g>
+    <g id="u" data-name="https://api.census.gov/">
+      <g id="v" data-name="curly brace">
+        <path class="ao" d="M1.02,134.56c-.17,2.95.86,6.64,3.65,8.65,1.85,1.31,4.45,1.4,6.86,1.4,40.39.02,80.81-.03,121.19.02,5.94-.2,10.74,3.26,10.96,8.02"/>
+        <path class="ap" d="M286.69,134.56c.17,2.95-.86,6.64-3.64,8.65-1.85,1.31-4.45,1.4-6.86,1.4-40.35.02-80.72-.03-121.06.02-5.94-.2-10.72,3.26-10.95,8.02"/>
+      </g>
+      <text class="af" transform="translate(48.35 196.58)"><tspan x="0" y="0">Census data API</tspan></text>
+    </g>
+  </g>
+  <g id="w" data-name="URL">
+    <text class="ax" transform="translate(1.84 119.57)"><tspan class="ae" x="0" y="0">https://api.census.gov/</tspan><tspan class="ah" x="306.25" y="0">data/2020/dec/dp</tspan><tspan class="at" x="519.3" y="0">?</tspan><tspan class="ag" x="532.61" y="0">get=NAME</tspan><tspan class="ai" x="639.13" y="0">&amp;</tspan><tspan class="ag" x="652.45" y="0">DP1_0001C</tspan><tspan class="ai" x="772.29" y="0">&amp;</tspan><tspan class="ag" x="785.6" y="0">for=state:*</tspan><tspan class="ai" x="932.07" y="0">&amp;</tspan><tspan class="ad" x="945.39" y="0">key=stringofcharactersandnumbers</tspan></text>
+  </g>
+</svg>
