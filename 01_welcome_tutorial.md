@@ -1,5 +1,9 @@
 ﻿# Tutorial: How to get a Census API Key up and running
-The U.S. Census Bureau ("Census Bureau") offers some of its public data in machine-readable format via an Application Programming Interface ("**API**"). It is a PITA to get a lot of data. The detailed profiles are very limited. There are many ways to access Census data with an API key. You could call it through Python, R, thanks to packages like Pygris, tigris, etc. GIS servers and many web platforms use REST API.
+The U.S. Census Bureau ("Census Bureau") offers some of its public data in machine-readable format via an Application Programming Interface ("**API**")[^A]. It is a PITA to get a lot of data. The detailed profiles are very limited. There are many ways to access Census data with an API key. 
+
+Once you have an API key, you can extract information from Census Bureau data sets using a variety of tools including JSON, R, Python, or even by typing a query string into the URL of a Web browser [^B].
+
+You could call it through Python, R, thanks to packages like Pygris, tigris, etc. GIS servers and many web platforms use REST API.
 
 This is a tutorial on how to get a Census API key and use it with the URL feature. 
 
@@ -9,6 +13,9 @@ Estimated time: 10 minutes
 <a class="icon-check-plus"></a> **What you'll need**:
 * Access to the Internet
 * A working email address
+* Mozilla Firefox OR Google Chrome browser[^1]
+
+[^1]: According to [this 2020 Census guide](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_api_handbook_2020.pdf), Firefox and Chrome provide the functionality to view the results from API queries in all Web browsers, so users who do not use these may not be able view them.
 
 Do you already have an API key? Skip to [Step 3](#step-3-use-the-key)
 
@@ -129,8 +136,8 @@ Now, for the assignment!
 
 ## Resources
 
-* U.S. Census Bureau (July 30 2024). [Census Data API User Guide Website](https://www.census.gov/data/developers/guidance/api-user-guide.html)  or view the [PDF version](https://www.census.gov/content/dam/Census/data/developers/api-user-guide/api-user-guide.pdf). 
-*   U.S. Census Bureau (February 2020). [Using the Census Data API With the American Community Survey: What Data Users Need to Know](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_api_handbook_2020.pdf),  U.S. Government Printing Office, Washington, DC. 
+* [^A]: U.S. Census Bureau (July 30 2024). [Census Data API User Guide Website](https://www.census.gov/data/developers/guidance/api-user-guide.html)  or view the [PDF version](https://www.census.gov/content/dam/Census/data/developers/api-user-guide/api-user-guide.pdf). 
+* [^B]:  U.S. Census Bureau (February 2020). [Using the Census Data API With the American Community Survey: What Data Users Need to Know](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_api_handbook_2020.pdf),  U.S. Government Printing Office, Washington, DC. 
 
 > Written with [StackEdit](https://stackedit.io/).
 > Tutorial by <a>Thi Truong</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0" target="_blank">CC BY 4.0</a>
