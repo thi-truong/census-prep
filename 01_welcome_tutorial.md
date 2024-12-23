@@ -92,12 +92,12 @@ One of the easiest ways is by simply using it on URLs, or through the website. W
 3. Replace the last part after the equals sign in `key=stringofcharactersandnumbers` with your API key.
 4. Press enter/navigate to the address. You should be directed to a .txt (plain text file), where the first 6 rows looks like this:
 
- ``` [["NAME","DP1_0001C","state"],
- ["Alabama","5024279","01"],
- ["Alaska","733391","02"],
- ["Arizona","7151502","04"],
- ["Arkansas","3011524","05"],
- ["California","39538223","06"], ```
+``` [["NAME","DP1_0001C","state"],  
+["Alabama","5024279","01"],  
+["Alaska","733391","02"],  
+["Arizona","7151502","04"],  
+["Arkansas","3011524","05"],  
+["California","39538223","06"], ```
 
 Congrats! You just pulled Census data using their API key. 
 
