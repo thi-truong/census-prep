@@ -1,5 +1,5 @@
 ﻿# Tutorial: How to get a Census API Key up and running
-The U.S. Census Bureau ("Census Bureau") offers some of its public data in machine-readable format via an Application Programming Interface ("**API**")[^A]. It is a PITA to get a lot of data. The detailed profiles are very limited. There are many ways to access Census data with an API key. 
+The U.S. Census Bureau ("Census Bureau") offers some of its public data in machine-readable format via an Application Programming Interface ("**API**")[^A]. It is a PITA to get a lot of data. The detailed profiles are very limited. There are many ways to access Census data with an API key. It is a free, publicly accessible and open source services that gets the raw statistical data from the surveys and programs across the Census Bureau[^C]. 
 
 Once you have an API key, you can extract information from Census Bureau data sets using a variety of tools including JSON, R, Python, or even by typing a query string into the URL of a Web browser [^B].
 
@@ -17,6 +17,7 @@ Estimated time: 10 minutes
 
 [^A]: U.S. Census Bureau (July 30 2024). [Census Data API User Guide Website](https://www.census.gov/data/developers/guidance/api-user-guide.html)  or view the [PDF version](https://www.census.gov/content/dam/Census/data/developers/api-user-guide/api-user-guide.pdf). 
 [^B]:  U.S. Census Bureau (February 2020). [Using the Census Data API With the American Community Survey: What Data Users Need to Know](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_api_handbook_2020.pdf),  U.S. Government Printing Office, Washington, DC. 
+[^C]. [Transcript, Demystifying the Census API Transcript](https://www2.census.gov/about/training-workshops/2020/2020-07-22-cedcsi-transcript.pdf) (pdf). 22 July 2020.
 [^1]: According to [this 2020 Census guide](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_api_handbook_2020.pdf), Firefox and Chrome provide the functionality to view the results from API queries in all Web browsers, so users who do not use these may not be able view them.
 
 Do you already have an API key? Skip to [Step 3](#step-3-use-the-key)
@@ -81,7 +82,9 @@ _Figure 3: Example sequence of a link getting modified through Proofpoint email 
 
 Now that your API key has been activated, let's see if this works.
 
-One of the easiest ways is by simply using it on URLs, or through the website. When doing a web call, there is no software or program needed. You just specify your request in a URL and get the result, all in your web browser. Let's try it now.
+One of the easiest ways is by simply using it on URLs, or through the website. When doing a web call, there is no software or program needed. You just specify your request in a URL and get the result, all in your web browser. Let's try it now. It really is as simple as starting with a sample URL, and then editing that URL to get the data that you're looking for[^C]
+
+
 
 1. Copy this link 
 `https://api.census.gov/data/2020/dec/dp?get=NAME&DP1_0001C&for=state:*&key=stringofcharactersandnumbers`
@@ -130,6 +133,8 @@ Here is what we find:
 		- `for`  is a predicate clause, which specifies how variables should be filtered or limited (for example, for certain geographic areas).
 			- The asterisk here returns all states. If you wanted to limit it to California, you would write 06.
 		-  `state` is a geography, which specifies the geographic area(s) of interest.
+
+Notice how you can search for the exact variables and geographies that you're looking for, and there is no need to store any data or make intermediate products to narrow down to the results you want.  You can also access way more data than what you can find on data.census.gov, and you don't have to use the file transfer protocol (FTP) either. For example, download a bunch of rows in an example.
 
 Verify some numbers like for California.
 
