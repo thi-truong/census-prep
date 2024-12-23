@@ -44,11 +44,12 @@ _Figure 1: Web Form to Request a Census Data API Key_
 	3. Check the box to agree. 
 4. Press "Request Key".
 
----
+You should see a success message, "Your request for a new API key has been successfully submitted. Please check your email. In a few minutes you should receive a message with instructions on how to activate your new key."
+
+After submitting, you should almost immediately receive an email with subject line, "Census Data API Key Request".
 
 ## Step 2. Activate the key
 
-After submitting, you should almost immediately receive an email with subject line, "Census Data API Key Request".
 ![Screenshot of email from the Census Bureau API Team. Subject line, "Census Data API Key request. Email body includes the API key which has been censored, followed by a link to activate the key](images/email_API_key_string.png)
 _Figure 2: Screenshot of activation email from Census Bureau_  
 
@@ -58,27 +59,23 @@ Until you click the link in this email, the key will not work yet!
 
 Click "Click here to activate your key".
 
-If you got this result, then proceed to [Step 3](#step-3-use-the-key)
-
-> **Success**
-> 
-> Your request for a new API key has been successfully submitted. Please check your email. In a few minutes you should receive a message with instructions on how to activate your new key.
+If you see a success message, then proceed to [Step 3](#step-3-use-the-key)
 
 <details>
-<summary><strong>Troubleshooting if you got this error message (Click to expand)</strong><br/><br/>
+<summary><strong>If you got this error message... (Click to expand)</strong><br/><br/>
 <blockquote><strong>Error</strong><br/>
 You've attempted to validate an unknown key. If it has been more than 48 hours since you submitted your request for this API key then the request has been removed from the system. Please request a new key and activate it within 48 hours.
 </blockquote></summary>
 
 <p>A possible explanation for the error:</p>
 
-<p>If you used your UCI email address (or similar institution's address), there were changes made to the activation link via <a href="https://www.oit.uci.edu/services/communication-collaboration/proofpoint/">Proofpoint Email Security</a>. The process is shown in Figure 3 here, using an address to Reddit as an example, where you can still identify the original link in the mess on the right:</p>
+<p>If you used your UCI email address (or similar institution's address), the problem might be the activation link was due to <a href="https://www.oit.uci.edu/services/communication-collaboration/proofpoint/">Proofpointy</a>. The process is shown in Fig. 3, where an example original address to Reddit is redirected to a new address. </p>
 
 <figure>
 <img src="images/proofpoint_emails_process_edited.svg" alt="Sequence diagram of a link to Reddit.com sent to UCI recipient, which is deemed malicious by Proofpoint. Link is rerouted with URL defense and the result is a link with a bunch of extra crap added to it. Example of link to https://www.reddit.com gets 120 characters appended to it"/><br/>
  <figcaption><em>Figure 3: Example sequence of a link getting modified through Proofpoint email security process. Note: the result URL is similar to the real output, but this is fake and for demonstration purposes.</em> </figcaption></figure><br/><br/>
  
-<p> Apply the same observation to the link sent to your email:</p>
+<p> However, even you, the recipient without the original link, you <em>can</em> still identify the original link within the mess upon a closer look. So, try to apply the observation to the link sent to your email:</p>
 <ol>
 	<li>Right click the link text "click here to activate your key". Select "Copy link address"</li>
 	<li>Paste the URL in a text editor and assess: If the address been modified, you may be able to find the original URL, which should begin with <code>https....</code> and end with a string of numbers and letters that matches the key in your email (before <code>__;!!</code>). Can you identify it?
@@ -94,7 +91,7 @@ You've attempted to validate an unknown key. If it has been more than 48 hours s
 
 ## Step 3. Use the key
 
-Now that your API key has been activated, let's see if this works.
+Now that your API key has been activated, let's test out a query:
 
 1. Copy this link 
 `https://api.census.gov/data/2020/dec/dp?get=NAME&DP1_0001C&for=state:*&key=stringofcharactersandnumbers`
