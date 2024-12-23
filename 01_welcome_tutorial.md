@@ -92,7 +92,7 @@ Now that your API key has been activated, let's test out a query:
 4. Press enter/navigate to the address. You should be directed to plain text formatted data. Expand the accordion below to check. If it is the same, then congrats! You just pulled Census data with the API key.
 
 <details>
-<summary>Click to see contents of <code>get=NAME&DP1_0001C&for=state:*</code></summary>
+<summary><strong>Click to see contents of <code>get=NAME&DP1_0001C&for=state:*</code></strong></summary>
 
 ```
 [["NAME","DP1_0001C","state"],
