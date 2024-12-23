@@ -73,10 +73,10 @@ Thankfully, you can still identify the original link in the mess. It is preceded
 
 1. Right click the link text "click here to activate your key". Select "Copy link address"
 2. Paste the URL in a text editor.
-3. Identify the original URL. It should begin with<code>https://api.census...</code> and end with a string of numbers and letters right before <code>__;!!</code>
-4. Copy this URL segment. Paste it into your browser's address bar. Press enter/go to the page.
+3. Identify the original URL and highlight it. It should begin with <code>https....</code> and end with a string of numbers and letters that matches the key in your email (before <code>__;!!</code> )
+4. Copy the highlighted portion. Paste into your browser's address bar. Navigate to the page
 5. You should see a success message now. Proceed to Step 3.
-	- If it still doesn't work, then message me (<a href="mailto:tbtruon1@uci.edu" target="_blank" rel="noopener">tbtruon1@uci.edu</a>) for help!
+	- If it doesn't work, then email me or tag me on Slack for help!
 
 ## Step 3. Use the key
 
