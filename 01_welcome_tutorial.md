@@ -15,6 +15,8 @@ Estimated time: 10 minutes
 * A working email address
 * Mozilla Firefox OR Google Chrome browser[^1]
 
+[^A]: U.S. Census Bureau (July 30 2024). [Census Data API User Guide Website](https://www.census.gov/data/developers/guidance/api-user-guide.html)  or view the [PDF version](https://www.census.gov/content/dam/Census/data/developers/api-user-guide/api-user-guide.pdf). 
+[^B]:  U.S. Census Bureau (February 2020). [Using the Census Data API With the American Community Survey: What Data Users Need to Know](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_api_handbook_2020.pdf),  U.S. Government Printing Office, Washington, DC. 
 [^1]: According to [this 2020 Census guide](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_api_handbook_2020.pdf), Firefox and Chrome provide the functionality to view the results from API queries in all Web browsers, so users who do not use these may not be able view them.
 
 Do you already have an API key? Skip to [Step 3](#step-3-use-the-key)
@@ -86,12 +88,13 @@ One of the easiest ways is by simply using it on URLs, or through the website. W
 2. Paste the link into your web browser, but do not press enter/go.
 3. Replace the last part after the equals sign in `key=stringofcharactersandnumbers` with your API key.
 4. Press enter/navigate to the address. You should be directed to a .txt (plain text file), where the first 6 rows looks like this:
-	> [["NAME","DP1_0001C","state"],
-	> ["Alabama","5024279","01"],
-	> ["Alaska","733391","02"],
-	> ["Arizona","7151502","04"],
-	> ["Arkansas","3011524","05"],
-	> ["California","39538223","06"],
+
+ `[["NAME","DP1_0001C","state"],
+ ["Alabama","5024279","01"],
+ ["Alaska","733391","02"],
+ ["Arizona","7151502","04"],
+ ["Arkansas","3011524","05"],
+ ["California","39538223","06"],`
 
 Congrats! You just pulled Census data using their API key. 
 
@@ -136,8 +139,9 @@ Now, for the assignment!
 
 ## Resources
 
-* [^A]: U.S. Census Bureau (July 30 2024). [Census Data API User Guide Website](https://www.census.gov/data/developers/guidance/api-user-guide.html)  or view the [PDF version](https://www.census.gov/content/dam/Census/data/developers/api-user-guide/api-user-guide.pdf). 
-* [^B]:  U.S. Census Bureau (February 2020). [Using the Census Data API With the American Community Survey: What Data Users Need to Know](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_api_handbook_2020.pdf),  U.S. Government Printing Office, Washington, DC. 
+* U.S. Census Bureau (July 30 2024). [Census Data API User Guide Website](https://www.census.gov/data/developers/guidance/api-user-guide.html)  or view the [PDF version](https://www.census.gov/content/dam/Census/data/developers/api-user-guide/api-user-guide.pdf).
+* U.S. Census Bureau (February 2020). [Using the Census Data API With the American Community Survey: What Data Users Need to Know](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_api_handbook_2020.pdf),  U.S. Government Printing Office, Washington, DC. 
 
 > Written with [StackEdit](https://stackedit.io/).
-> Tutorial by <a>Thi Truong</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0" target="_blank">CC BY 4.0</a>
+> 
+> This tutorial by Thi Truong is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0). ![CC BY License](images/cc_by.png)
