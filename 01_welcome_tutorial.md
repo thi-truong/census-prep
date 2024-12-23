@@ -148,4 +148,5 @@ Written with [StackEdit](https://stackedit.io/).
 
 Used Docsify Single Page template for Github.
 
-This tutorial by Thi Truong is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0). ![CC BY](images/cc_by.png)
+Tutorial by Thi Truong is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0).
+![CC BY](images/cc_by.png)
