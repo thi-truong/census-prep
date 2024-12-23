@@ -90,15 +90,13 @@ One of the easiest ways is by simply using it on URLs, or through the website. W
 `https://api.census.gov/data/2020/dec/dp?get=NAME&DP1_0001C&for=state:*&key=stringofcharactersandnumbers`
 2. Paste the link into your web browser, but do not press enter/go.
 3. Replace the last part after the equals sign in `key=stringofcharactersandnumbers` with your API key.
-4. Press enter/navigate to the address. You should be directed to a .txt (plain text file), where the first 6 rows looks like this:
+4. Press enter/navigate to the address. You should be directed to plain text formatted data. Expand the accordion below to check. If it is the same, then congrats! You just pulled Census data with the API key.
+
+
+<details>
+<summary>Click to see contents of <code>get=NAME&DP1_0001C&for=state:*</code></summary>
 
 ```
- [["NAME","DP1_0001C","state"],  
- ["Alabama","5024279","01"],  
- ["Alaska","733391","02"],  
- ["Arizona","7151502","04"],  
- ["Arkansas","3011524","05"],  
- ["California","39538223","06"],
 [["NAME","DP1_0001C","state"],
 ["Alabama","5024279","01"],
 ["Alaska","733391","02"],
@@ -154,7 +152,7 @@ One of the easiest ways is by simply using it on URLs, or through the website. W
 ["Puerto Rico","3285874","72"]]
 ```
 
-Congrats! You just pulled Census data using their API key. 
+</details>
 
 ### What did we just do?
 
