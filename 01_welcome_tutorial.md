@@ -39,8 +39,7 @@ Do you already have an API key? Skip to [Step 3](#step-3-use-the-key)
               [-90,35],
               [-90,30],
               [-85,30],
-              [-85,35],
-              [-90,35]
+              [-85,35]
           ]
         ]
       }
