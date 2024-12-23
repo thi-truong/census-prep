@@ -198,8 +198,6 @@ Now, for the assignment!
 [^C]: [Transcript, Demystifying the Census API Transcript](https://www2.census.gov/about/training-workshops/2020/2020-07-22-cedcsi-transcript.pdf) (pdf). 22 July 2020.
 [^1]: According to [this 2020 Census guide](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_api_handbook_2020.pdf), Firefox and Chrome provide the functionality to view the results from API queries in all Web browsers, so users who do not use these may not be able view them.
 
----
-
 This is a one page course template was made with [Docsify-This.net](https://docsify-this.net/#/). Markdown draft in [StackEdit](https://stackedit.io/).
 
 Tutorial by Thi Truong is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0).
