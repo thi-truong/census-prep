@@ -10,12 +10,11 @@ The U.S. Census Bureau offers some of its public data online. It is often diffic
 
 Simply put, raw Census data gathering is known to be a pain in the ass. If it wasn't, [this fiverr gig](https://www.fiverr.com/s/EgYBQG9) wouldn't exist.
 
-Thankfully, there are ways to access the data in machine-readable format via  an Application Programming Interface ("**API**") key[^A]. Once you have an API key, you can extract raw statistical data from all sorts of Census Bureau surveys and programs[^C], and even with tools you might already use, like...
-- JSON (ArcGIS uses REST APIs)
-- R  ([tigris](https://github.com/walkerke/tigris))
-- Python ([Pygris](https://walker-data.com/pygris/))
+Thankfully, there are ways to access the data in machine-readable format via  an Application Programming Interface ("**API**") key[^A]. Once you have an API key, you can extract raw statistical data from all sorts of Census Bureau surveys and programs[^C], and even with tools you might already use, like JSON (ArcGIS uses REST APIs), R ([tigris](https://github.com/walkerke/tigris)), Python ([Pygris](https://walker-data.com/pygris/)), and the list goes on.
 
-Perhaps the simplest way to use the API key, however, is to type a query string into the URL of a Web browser [^B]. That is what we're doing today.
+But...do you need to use those tools?
+
+**No!** You can specify your request as a query string in a URL and get the data that you're looking for, all in your web browser[^B]. If you have ever edited a URL, then you have already practiced this many times before. This is the method we are using today.
 
 **Estimated time**: 10 minutes
 
@@ -25,9 +24,11 @@ Perhaps the simplest way to use the API key, however, is to type a query string 
 - [ ] Mozilla Firefox OR Google Chrome browser[^1]
 
 **What you'll do**:
-- [ ] Request an API Key
-- [ ] Activate the API Key
-- [ ] Get results from a query in your web browser
+- [ ] Request Census API Key
+- [ ] Activate Census API Key
+- [ ] Use Census API key in a query to get data
+
+---
 
 ## Step 1. Request a key
 
@@ -42,6 +43,8 @@ _Figure 1: Web Form to Request a Census Data API Key_
 	2. Any email address should work. I used my UCI email address
 	3. Check the box to agree. 
 4. Press "Request Key".
+
+---
 
 ## Step 2. Activate the key
 
@@ -87,11 +90,11 @@ You've attempted to validate an unknown key. If it has been more than 48 hours s
 
 </details>
 
+---
+
 ## Step 3. Use the key
 
 Now that your API key has been activated, let's see if this works.
-
-One of the easiest ways is by simply using it on URLs, or through the website. When doing a web call, there is no software or program needed. You just specify your request in a URL and get the result, all in your web browser. Let's try it now. It really is as simple as starting with a sample URL, and then editing that URL to get the data that you're looking for[^C]
 
 1. Copy this link 
 `https://api.census.gov/data/2020/dec/dp?get=NAME&DP1_0001C&for=state:*&key=stringofcharactersandnumbers`
