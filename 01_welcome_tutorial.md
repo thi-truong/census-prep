@@ -64,8 +64,7 @@ Then, expand [the section below](#troubleshoot-error-message) for a possible sol
 
 
 <details>
-<summary>Troubleshoot error message
-
+<summary><strong>Troubleshoot this error message (Click to expand)</strong><br/><br/>
 <blockquote><strong>Error</strong><br/>
 You've attempted to validate an unknown key. If it has been more than 48 hours since you submitted your request for this API key then the request has been removed from the system. Please request a new key and activate it within 48 hours.
 </blockquote>
