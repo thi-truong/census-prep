@@ -1,15 +1,8 @@
-﻿# Tutorial: How to get a Census API Key up and running
-The U.S. Census Bureau ("Census Bureau") offers some of its public data in machine-readable format via an Application Programming Interface ("**API**")[^A]. It is a PITA to get a lot of data. The detailed profiles are very limited. There are many ways to access Census data with an API key. It is a free, publicly accessible and open source services that gets the raw statistical data from the surveys and programs across the Census Bureau[^C]. 
+# Tutorial: How to get a Census API Key up and running
+ 
+ This is a tutorial on how to get a Census API key and use it with the URL feature. Written for UCI folks, but it should work for anyone.
 
-Once you have an API key, you can extract information from Census Bureau data sets using a variety of tools including JSON, R, Python, or even by typing a query string into the URL of a Web browser [^B].
-
-You could call it through Python, R, thanks to packages like Pygris, tigris, etc. GIS servers and many web platforms use REST API.
-
-This is a tutorial on how to get a Census API key and use it with the URL feature.
-
-Intended Audience: UCI folks, but it should work for anyone
-
-Estimated time: 10 minutes
+**Estimated time**: 10 minutes
 
 <a class="icon-check-plus"></a> **What you'll need**:
 - [x] Access to the Internet
@@ -21,7 +14,20 @@ Estimated time: 10 minutes
 - [ ] Activate the API Key
 - [ ] Get results from a query in your web browser
 
-## Step 1. Request
+**Why?**
+
+The U.S. Census Bureau offers some of its public data online. It is often difficult to get detailed data without running into limitations. If you use their data explorer tool, the the "Detailed Profiles" are still too limited (and are not updated for errata). Using FTP means you have to download a ton of starting data, even if you ony have a few specific things to find. Simply put, it is a well-known pain in the ass. Why else wouldn't [this fiverr gig](https://www.fiverr.com/s/EgYBQG9) exist? 
+
+Thankfully, data is also available in machine-readable format via an free, publically accessible open source Application Programming Interface ("**API**")[^A]. 
+
+There are many ways to access Census data with a free, publically accessible API key. Once you have one, you can extract raw statistical data from the surveys and programs across the Census Bureau[^C]. You can extract this data within a variety of tools you might already use, like...
+- JSON (ArcGIS uses REST APIs)
+- R  ([tigris](https://github.com/walkerke/tigris))
+- Python ([Pygris](https://walker-data.com/pygris/))
+
+Perhaps the simplest way, however, is to type a query string with your API key into the URL of a Web browser [^B].
+
+## Step 1. Request a key
 
 ![Screenshot of US Census Bureau website. Request a U.S. Census Data API Key. Form fields for organization Name, email address, and a checkbox for "I agree to the terms of service". Submit button to request key](images/API_request.png)
 _Figure 1: Web Form to Request a Census Data API Key_  
