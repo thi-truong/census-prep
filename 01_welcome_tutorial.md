@@ -146,5 +146,7 @@ Now, for the assignment!
 
 Written with [StackEdit](https://stackedit.io/).
 
+Used Docsify Single Page template for Github.
+
 This tutorial by Thi Truong is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0).
 <picture><img alt=CC BY License" src="images/cc_by.png"></picture>
