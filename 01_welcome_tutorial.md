@@ -76,14 +76,6 @@ _Figure 3: Example sequence of a link getting modified through Proofpoint email 
 
 <p>Thankfully, you can still identify the original link in the mess. It is preceded by and precedes two underscores in a row (?? what security?? ).  Try these steps:</p>
 
-1. Right click the link text "click here to activate your key". Select "Copy link address"
-2. Paste the URL in a text editor.
-3. Identify the original URL and highlight it. It should begin with <code>https....</code> and end with a string of numbers and letters that matches the key in your email (before <code>__;!!</code> )
-4. Copy the highlighted portion. Paste into your browser's address bar. Navigate to the page
-5. You should see a success message now. Proceed to Step 3.
-	- If it doesn't work, then email me or tag me on Slack for help!
-
-
 </summary>
 
 </details>
