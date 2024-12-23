@@ -62,6 +62,18 @@ But, if you saw this error message...
 
 Then, expand [the section below](#troubleshoot-error-message) for a possible solution:
 
+
+<details>
+<summary>Troubleshoot error message
+
+<blockquote><strong>Error</strong><br/>
+You've attempted to validate an unknown key. If it has been more than 48 hours since you submitted your request for this API key then the request has been removed from the system. Please request a new key and activate it within 48 hours.
+</blockquote>
+
+</summary>
+
+</details>
+
 ### Troubleshoot error message
 
 If you used your UCI email address (or similar institution's address), it might be due to changes made to the activation link via <a href="https://www.oit.uci.edu/services/communication-collaboration/proofpoint/">Proofpoint Email Security</a>. The process is shown in this diagram (note: the result URL is similar to the real output, but this is fake and for demonstration purposes.)</p>
