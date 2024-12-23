@@ -93,7 +93,8 @@ One of the easiest ways is by simply using it on URLs, or through the website. W
 4. Press enter/navigate to the address. You should be directed to plain text formatted data. Expand the accordion below to check. If it is the same, then congrats! You just pulled Census data with the API key.
 
 
-<details>
+<div style="background-color: #f9c05d">
+	<details>
 <summary>Click to see contents of <code>get=NAME&DP1_0001C&for=state:*</code></summary>
 
 ```
@@ -153,6 +154,7 @@ One of the easiest ways is by simply using it on URLs, or through the website. W
 ```
 
 </details>
+</div>
 
 ### What did we just do?
 
