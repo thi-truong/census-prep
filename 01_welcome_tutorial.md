@@ -67,11 +67,25 @@ Then, expand [the section below](#troubleshoot-error-message) for a possible sol
 <summary><strong>Troubleshoot this error message (Click to expand)</strong><br/><br/>
 <blockquote><strong>Error</strong><br/>
 You've attempted to validate an unknown key. If it has been more than 48 hours since you submitted your request for this API key then the request has been removed from the system. Please request a new key and activate it within 48 hours.
-</blockquote></summary><br/>
+</blockquote></summary>
 
-<p>If you used your UCI email address (or similar institution's address), it might be due to changes made to the activation link via <a href="https://www.oit.uci.edu/services/communication-collaboration/proofpoint/">Proofpoint Email Security</a>. The process is shown in this diagram (note: the result URL is similar to the real output, but this is fake and for demonstration purposes.)</p><br/>
+<p>If you used your UCI email address (or similar institution's address), it might be due to changes made to the activation link via <a href="https://www.oit.uci.edu/services/communication-collaboration/proofpoint/">Proofpoint Email Security</a>. The process is shown in this diagram (note: the result URL is similar to the real output, but this is fake and for demonstration purposes.)</p>
 
 <p>Thankfully, you can still identify the original link in the mess. It is preceded by and precedes two underscores in a row (?? what security?? ).  Try these steps:</p>
+
+<figure>
+<img src="images/proofpoint_emails_process_edited.svg" alt="Sequence diagram of a link to Reddit.com sent to UCI recipient, which is deemed malicious by Proofpoint. Link is rerouted with URL defense and the result is a link with a bunch of extra crap added to it. Example of link to https://www.reddit.com gets 120 characters appended to it">
+ <figcaption><emph>Figure 3: Example sequence of a link getting modified through Proofpoint email security process</emph> </figcaption>
+</figure>
+
+<ol>
+	<li>Right click the link text "click here to activate your key". Select "Copy link address"</li>
+	<li>Paste the URL in a text editor.</li>
+	<li>Identify the original URL and highlight it. It should begin with <code>https....</code> and end with a string of numbers and letters that matches the key in your email (before <code>__;!!</code>)</li>
+	<li>Copy the highlighted portion. Paste into your browser's address bar. Navigate to the page</li>
+	<li>You should see a success message now. Proceed to Step 3.</li>
+	<ul><li>If it doesn't work, then email me or tag me on Slack for help!</li></ul>
+</ol>
 
 </details>
 
