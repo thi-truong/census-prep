@@ -149,9 +149,7 @@ Now, for the assignment!
 
 ---
 
-Written with [StackEdit](https://stackedit.io/).
-
-Used Docsify Single Page template for Github.
+This is a one page course template was made with [Docsify-This.net](https://docsify-this.net/#/). Markdown draft in [StackEdit](https://stackedit.io/).
 
 Tutorial by Thi Truong is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0).
 ![CC BY](images/cc_by.png)
