@@ -92,8 +92,8 @@ One of the easiest ways is by simply using it on URLs, or through the website. W
 3. Replace the last part after the equals sign in `key=stringofcharactersandnumbers` with your API key.
 4. Press enter/navigate to the address. You should be directed to plain text formatted data. Expand the accordion below to check. If it is the same, then congrats! You just pulled Census data with the API key.
 
-	<details>
-<summary><span style="color:#FFFFC5;">Click to see contents of <code>get=NAME&DP1_0001C&for=state:*</code></span></summary>
+<details>
+<summary>Click to see contents of <code>get=NAME&DP1_0001C&for=state:*</code></summary>
 
 ```
 [["NAME","DP1_0001C","state"],
@@ -152,7 +152,6 @@ One of the easiest ways is by simply using it on URLs, or through the website. W
 ```
 
 </details>
-</div>
 
 ### What did we just do?
 
