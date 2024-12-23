@@ -71,25 +71,18 @@ _Figure 3: Example sequence of a link getting modified through Proofpoint email 
 
 Thankfully, you can still identify the original link in the mess. It is preceded by and precedes two underscores in a row (?? what security?? ).  Try these steps:
 
-Right click the link text "click here to activate your key". Select "Copy link address"
-
-Paste the URL in a text editor. 
-
-Identify the original URL. It should begin with<code>https://api.census...</code> and end with a string of numbers and letters right before <code>__;!!</code>
-
-Copy this URL segment. Paste it into your browser's address bar. Press enter/go to the page. 
-
-You should see a success message now. Proceed to Step 3. 
-
-If it still doesn't work, then message me (<a href="mailto:tbtruon1@uci.edu" target="_blank" rel="noopener">tbtruon1@uci.edu</a>) for help!
+1. Right click the link text "click here to activate your key". Select "Copy link address"
+2. Paste the URL in a text editor.
+3. Identify the original URL. It should begin with<code>https://api.census...</code> and end with a string of numbers and letters right before <code>__;!!</code>
+4. Copy this URL segment. Paste it into your browser's address bar. Press enter/go to the page.
+5. You should see a success message now. Proceed to Step 3.
+	- If it still doesn't work, then message me (<a href="mailto:tbtruon1@uci.edu" target="_blank" rel="noopener">tbtruon1@uci.edu</a>) for help!
 
 ## Step 3. Use the key
 
 Now that your API key has been activated, let's see if this works.
 
 One of the easiest ways is by simply using it on URLs, or through the website. When doing a web call, there is no software or program needed. You just specify your request in a URL and get the result, all in your web browser. Let's try it now. It really is as simple as starting with a sample URL, and then editing that URL to get the data that you're looking for[^C]
-
-
 
 1. Copy this link 
 `https://api.census.gov/data/2020/dec/dp?get=NAME&DP1_0001C&for=state:*&key=stringofcharactersandnumbers`
