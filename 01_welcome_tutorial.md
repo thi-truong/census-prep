@@ -5,49 +5,21 @@ Once you have an API key, you can extract information from Census Bureau data se
 
 You could call it through Python, R, thanks to packages like Pygris, tigris, etc. GIS servers and many web platforms use REST API.
 
-This is a tutorial on how to get a Census API key and use it with the URL feature. 
+This is a tutorial on how to get a Census API key and use it with the URL feature.
 
 Intended Audience: UCI folks, but it should work for anyone
+
 Estimated time: 10 minutes
 
 <a class="icon-check-plus"></a> **What you'll need**:
-* Access to the Internet
-* A working email address
-* Mozilla Firefox OR Google Chrome browser[^1]
+- [x] Access to the Internet
+- [ ] A working email address
+- [ ] Mozilla Firefox OR Google Chrome browser[^1]
 
-[^A]: U.S. Census Bureau (July 30 2024). [Census Data API User Guide Website](https://www.census.gov/data/developers/guidance/api-user-guide.html)  or view the [PDF version](https://www.census.gov/content/dam/Census/data/developers/api-user-guide/api-user-guide.pdf). 
-[^B]:  U.S. Census Bureau (February 2020). [Using the Census Data API With the American Community Survey: What Data Users Need to Know](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_api_handbook_2020.pdf),  U.S. Government Printing Office, Washington, DC. 
-[^C]: [Transcript, Demystifying the Census API Transcript](https://www2.census.gov/about/training-workshops/2020/2020-07-22-cedcsi-transcript.pdf) (pdf). 22 July 2020.
-[^1]: According to [this 2020 Census guide](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_api_handbook_2020.pdf), Firefox and Chrome provide the functionality to view the results from API queries in all Web browsers, so users who do not use these may not be able view them.
-
-Do you already have an API key? Skip to [Step 3](#step-3-use-the-key)
-
-```geojson
-{
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "id": 1,
-      "properties": {
-        "ID": 0
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-              [-117.9549,33.78819],
-              [-117.9549,33.69178],
-              [-117.8074,33.69178],
-              [-117.8074,33.78819]
-          ]
-        ]
-      }
-    }
-  ]
-}
-```
-
+**What you'll do**:
+- [ ] Request an API Key _(Already have one? skip to [Step 3](#step-3-use-the-key)_
+- [ ] Activate the API Key
+- [ ] Get results from a query in your web browser
 
 ## Step 1. Request
 
@@ -221,10 +193,10 @@ Verify some numbers like for California.
 
 Now, for the assignment! 
 
-## Resources
-
-* U.S. Census Bureau (July 30 2024). [Census Data API User Guide Website](https://www.census.gov/data/developers/guidance/api-user-guide.html)  or view the [PDF version](https://www.census.gov/content/dam/Census/data/developers/api-user-guide/api-user-guide.pdf).
-* U.S. Census Bureau (February 2020). [Using the Census Data API With the American Community Survey: What Data Users Need to Know](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_api_handbook_2020.pdf),  U.S. Government Printing Office, Washington, DC. 
+[^A]: U.S. Census Bureau (July 30 2024). [Census Data API User Guide Website](https://www.census.gov/data/developers/guidance/api-user-guide.html)  or view the [PDF version](https://www.census.gov/content/dam/Census/data/developers/api-user-guide/api-user-guide.pdf). 
+[^B]:  U.S. Census Bureau (February 2020). [Using the Census Data API With the American Community Survey: What Data Users Need to Know](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_api_handbook_2020.pdf),  U.S. Government Printing Office, Washington, DC. 
+[^C]: [Transcript, Demystifying the Census API Transcript](https://www2.census.gov/about/training-workshops/2020/2020-07-22-cedcsi-transcript.pdf) (pdf). 22 July 2020.
+[^1]: According to [this 2020 Census guide](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_api_handbook_2020.pdf), Firefox and Chrome provide the functionality to view the results from API queries in all Web browsers, so users who do not use these may not be able view them.
 
 ---
 
