@@ -60,20 +60,25 @@ If you got this result, then proceed to [Step 3](#step-3-use-the-key)
 You've attempted to validate an unknown key. If it has been more than 48 hours since you submitted your request for this API key then the request has been removed from the system. Please request a new key and activate it within 48 hours.
 </blockquote></summary>
 
-<p>If you used your UCI email address (or similar institution's address), it might be due to changes made to the activation link via <a href="https://www.oit.uci.edu/services/communication-collaboration/proofpoint/">Proofpoint Email Security</a>. The process is shown in Figure 3 here:</p>
+<p>A possible explanation for the error:</p>
+
+<p>If you used your UCI email address (or similar institution's address), there were changes made to the activation link via <a href="https://www.oit.uci.edu/services/communication-collaboration/proofpoint/">Proofpoint Email Security</a>. The process is shown in Figure 3 here, using an address to Reddit as an example:</p>
 
 <figure>
-<img src="images/proofpoint_emails_process_edited.svg" alt="Sequence diagram of a link to Reddit.com sent to UCI recipient, which is deemed malicious by Proofpoint. Link is rerouted with URL defense and the result is a link with a bunch of extra crap added to it. Example of link to https://www.reddit.com gets 120 characters appended to it" width="70%"  align = "right"/>
+<img src="images/proofpoint_emails_process_edited.svg" alt="Sequence diagram of a link to Reddit.com sent to UCI recipient, which is deemed malicious by Proofpoint. Link is rerouted with URL defense and the result is a link with a bunch of extra crap added to it. Example of link to https://www.reddit.com gets 120 characters appended to it" width="75%"  align = "right"/>
  <figcaption><em>Figure 3: Example sequence of a link getting modified through Proofpoint email security process. Note: the result URL is similar to the real output, but this is fake and for demonstration purposes.</em> </figcaption></figure><br/><br/>
  
-<p>Thankfully, you can still identify the original link `https://www.reddit.com in the mess on the right. It is preceded by and precedes two underscores in a row. Apply the same observation to the API key activation link sent to your email</p>
-
+<p>Thankfully, you can still identify the original link `https://www.reddit.com` in the mess on the right. Apply the same observation to the API key activation link sent to your email:</p>
 <ol>
 	<li>Right click the link text "click here to activate your key". Select "Copy link address"</li>
 	<li>Paste the URL in a text editor and assess: If the address been modified, you may be able to find the original URL, which should begin with <code>https....</code> and end with a string of numbers and letters that matches the key in your email (before <code>__;!!</code>). Can you identify it?
 		<ul>
 			<li>Yes &rarr; Highlight and copy the original URL. Paste into your browser's address bar and go. You should see the success message now. Proceed to next step.</li>
 			<li>No &rarr; Email/Slack me for help. Make sure to include what browser/version you are using. </li>
+			        <dl>
+          <dt> <input type="checkbox"> Coffee </dt>
+          <dd> Black, Strong <dd>
+      </dl>
 		</ul>
 </ol>
 
