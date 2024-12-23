@@ -109,16 +109,16 @@ The schematic below breaks down the components of the API URL query. The variabl
 _Figure 4: Decoding an API URL address: Components of a Census Data API URL query_  
 
 Table explaining variables
-| Part | Phrase | Component  | Description |
+| Part | Phrase | Component | Description |
 |--|--|--|--|
-| Specified Dataset | `"2020/dec/dp"` | `2020`|  Year |
+| Specified Dataset | `"2020/dec/dp"` | `2020`| Year |
 | | | `dec` | Decennial Census |
 | | | `dp`| Detailed Profile |
-| Get? or Variable |  `"NAME"`  | `for=`| is a predicate clause |
+| Get? or Variable | `"NAME"` | `for=`| is a predicate clause |
 | | | `NAME` | provides the name of the geographic area(s) that you are using to limit your search |
 | Variable  |`"DP1_0001C"` | `DP1` | Data Profile Table 1 |
 | | | `0001C` | 1 is column 1, and C is the third row. Total population count |
-| Predicate  | `"for=state*"`| `for=` | is a predicate clause |
+| Predicate | `"for=state*"`| `for=` | is a predicate clause |
 | | | `state*` | is a geography, which specifies the geographic area(s) of interest. The asterisk * returns all states. |
 
 Here is what we find: 
@@ -142,6 +142,9 @@ Now, for the assignment!
 * U.S. Census Bureau (July 30 2024). [Census Data API User Guide Website](https://www.census.gov/data/developers/guidance/api-user-guide.html)  or view the [PDF version](https://www.census.gov/content/dam/Census/data/developers/api-user-guide/api-user-guide.pdf).
 * U.S. Census Bureau (February 2020). [Using the Census Data API With the American Community Survey: What Data Users Need to Know](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_api_handbook_2020.pdf),  U.S. Government Printing Office, Washington, DC. 
 
-> Written with [StackEdit](https://stackedit.io/).
-> 
-> This tutorial by Thi Truong is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0). ![CC BY License](images/cc_by.png)
+---
+
+Written with [StackEdit](https://stackedit.io/).
+
+This tutorial by Thi Truong is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0).
+<picture><img alt=CC BY License" src="images/cc_by.png"></picture>
