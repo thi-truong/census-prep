@@ -175,6 +175,16 @@ Table explaining variables
 | Predicate | `"for=state*"`| `for=` | is a predicate clause |
 | | | `state*` | is a geography, which specifies the geographic area(s) of interest. The asterisk * returns all states. |
 
+Building the API request, step-by-step
+
+Table explaining variables
+| Part | Phrase | Description | 
+|--|--|--|
+| Specified Dataset | `"2020/dec/dp"` | https://api.census.gov/data/2020.html says Census API: Datasets in /data/2020 and its descendants. Last column, "API Base URL"  tells you how to specify |
+| Get? or Variable | `"NAME"` | is a predicate clause |
+| Variable  |`"DP1_0001C"`| Data Profile Table 1 |
+| Predicate | `"for=state*"`| is a predicate clause |
+
 Here is what we find: 
 -   Data set source specified by `2020/dec/dp` which refers to the 2020 Decennial Census Detailed Profile (hence, "dec" and "dp")
 -  Variables. You can include up to 50 variables in a single API query (separated by commas). In this data set:
