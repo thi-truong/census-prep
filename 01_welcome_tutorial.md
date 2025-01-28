@@ -18,7 +18,7 @@ Thankfully, there are ways to access the data via an Application Programming Int
 **What you'll need**:
 - [x] Access to the Internet
 - [ ] A working email address
-- [ ] Mozilla Firefox OR Google Chrome browser[^1]<br>
+- [ ] Mozilla Firefox OR Google Chrome browser[^1]
 
 ---
 
