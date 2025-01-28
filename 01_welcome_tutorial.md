@@ -8,17 +8,17 @@ The U.S. Census Bureau offers a lot of public data online. You could use their D
 
 Thankfully, there are ways to access the data via an Application Programming Interface ("**API**") key[^A]. Once you have an API key, you can extract raw statistical data in machine-readable format from all sorts of Census Bureau surveys and programs[^C]. You can use it with tools you might already use, like JSON (ArcGIS uses REST APIs), R ([tigris](https://github.com/walkerke/tigris)), Python ([Pygris](https://walker-data.com/pygris/)), the list goes on. But...do you need to use those tools? **No!** You can specify your request as a query string in a URL and get the data that you're looking for, all in your web browser[^B]. If you have ever edited a URL, then you have already practiced this many times before. This is the method we are using today.
 
+**What you'll do**:
+- Request Census API Key _(Already have a working API key? skip to [Step 3](#step-3-use-the-key))_
+- Activate Census API Key
+- Use Census API key in a query to get data
+- 
 **Estimated time**: 10 minutes
 
 **What you'll need**:
 - [x] Access to the Internet
 - [ ] A working email address
 - [ ] Mozilla Firefox OR Google Chrome browser[^1]<br>
-
-**What you'll do**:
-- Request Census API Key _(Already have a working API key? skip to [Step 3](#step-3-use-the-key))_
-- Activate Census API Key
-- Use Census API key in a query to get data
 
 ---
 
