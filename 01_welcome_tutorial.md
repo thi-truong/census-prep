@@ -4,22 +4,25 @@
 
  **Why?**
 
-The U.S. Census Bureau offers a lot of public data online. You could use their Data Explorer tool to look at tables. You could use their FTP program. Nevertheless, raw Census data gathering is well known to be a pain in the ass. If it wasn't, [this fiverr gig](https://www.fiverr.com/s/EgYBQG9) wouldn't exist.
+The U.S. Census Bureau offers a lot of public data online. You could use their Data Explorer tool to look at tables. You could use their FTP program. Nevertheless, raw Census data gathering is well known to be a pain in the butt. If it wasn't, [these kinds of fiverr gigs](https://www.fiverr.com/s/EgYBQG9) wouldn't exist. :weary:
 
-Thankfully, there are ways to access the data via an Application Programming Interface ("**API**") key[^A]. Once you have an API key, you can extract raw statistical data in machine-readable format from all sorts of Census Bureau surveys and programs[^C]. You can use it with tools you might already use, like JSON (ArcGIS uses REST APIs), R ([tigris](https://github.com/walkerke/tigris)), Python ([Pygris](https://walker-data.com/pygris/)), the list goes on. But...do you need to use those tools? **No!** You can specify your request as a query string in a URL and get the data that you're looking for, all in your web browser[^B]. If you have ever edited a URL, then you have already practiced this many times before. This is the method we are using today.
+Thankfully, there are ways to access the data via an Application Programming Interface ("**API**") key[^A]. Once you have an API key, you can extract raw statistical data in machine-readable format from all sorts of Census Bureau surveys and programs[^C]. You can use it with tools you might already use, like JSON (ArcGIS uses REST APIs), R ([tigris](https://github.com/walkerke/tigris)), Python ([Pygris](https://walker-data.com/pygris/)), the list goes on.
+
+But...do you need to use all these tools to use the API? **No!** You can specify your request as a query string in a URL and get the data that you're looking for, all in your web browser[^B]. If you have ever edited a URL, then you have already practiced this many times before. This is the method we are using today.
 
 **Estimated time**: 10 minutes
 
-**What you'll need**:
+:clipboard: **What you'll need**:
 - [x] Access to the Internet
 - [ ] Mozilla Firefox OR Google Chrome browser
 	- According to [this 2020 Census guide](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_api_handbook_2020.pdf), these two browsers provide functionality to view the results from API queries. Other users may not be able view.
 - [ ] A working email address
 
-**What you'll do**:
-- [ ] Request Census API Key _(Already have a working API key? skip to [Step 3](#step-3-use-the-key))_
-- [ ] Activate Census API Key
-- [ ] Use Census API key in a query to get data
+:arrow_forward: **What you'll do**:
+1. Request Census API Key _(Already have a working API key? skip to [Step 3](#step-3-use-the-key))_
+2. Activate Census API Key
+3. Use Census API key in a query to get data
+4. Complete an assignment based on the query results
 
 ---
 
@@ -92,8 +95,10 @@ Now that your API key has been activated, let's test out a query:
 3. Replace the last part after the equals sign in `key=stringofcharactersandnumbers` with your API key.
 4. Press enter/navigate to the address. You should be directed to plain text formatted data. Expand the accordion below to check. If it is the same, then congrats! You just pulled Census data with the API key.
 
-<details>
-<summary><strong>Click to see contents of <code>get=NAME&DP1_0001C&for=state:*</code></strong></summary>
+
+### Check your work
+
+Below are the first 6 printed rows of the query result for `get=NAME&DP1_0001C&for=state:*`:
 
 ```
 [["NAME","DP1_0001C","state"],
@@ -102,60 +107,17 @@ Now that your API key has been activated, let's test out a query:
 ["Arizona","7151502","04"],
 ["Arkansas","3011524","05"],
 ["California","39538223","06"],
-["Colorado","5773714","08"],
-["Connecticut","3605944","09"],
-["Delaware","989948","10"],
-["District of Columbia","689545","11"],
-["Florida","21538187","12"],
-["Georgia","10711908","13"],
-["Hawaii","1455271","15"],
-["Idaho","1839106","16"],
-["Illinois","12812508","17"],
-["Indiana","6785528","18"],
-["Iowa","3190369","19"],
-["Kansas","2937880","20"],
-["Kentucky","4505836","21"],
-["Louisiana","4657757","22"],
-["Maine","1362359","23"],
-["Maryland","6177224","24"],
-["Massachusetts","7029917","25"],
-["Michigan","10077331","26"],
-["Minnesota","5706494","27"],
-["Mississippi","2961279","28"],
-["Missouri","6154913","29"],
-["Montana","1084225","30"],
-["Nebraska","1961504","31"],
-["Nevada","3104614","32"],
-["New Hampshire","1377529","33"],
-["New Jersey","9288994","34"],
-["New Mexico","2117522","35"],
-["New York","20201249","36"],
-["North Carolina","10439388","37"],
-["North Dakota","779094","38"],
-["Ohio","11799448","39"],
-["Oklahoma","3959353","40"],
-["Oregon","4237256","41"],
-["Pennsylvania","13002700","42"],
-["Rhode Island","1097379","44"],
-["South Carolina","5118425","45"],
-["South Dakota","886667","46"],
-["Tennessee","6910840","47"],
-["Texas","29145505","48"],
-["Utah","3271616","49"],
-["Vermont","643077","50"],
-["Virginia","8631393","51"],
-["Washington","7705281","53"],
-["West Virginia","1793716","54"],
-["Wisconsin","5893718","55"],
-["Wyoming","576851","56"],
-["Puerto Rico","3285874","72"]]
 ```
 
-</details>
+Does your result match this?
+- **Yes**, then proceed with the assignment.
+- **No**, then reach out to me and we can try to troubleshoot. Do not include the full URL with API key when contacting me.
+ 
+### Let's break down your query
 
-### What did we just do?
+We just printed results for **Total Population Count** for each U.S. State in the 2020 Decennial Census. 
 
-Let's look at the URL again to take a closer look at the dataset specification and variables.
+Let's take a closer look at the dataset specification and variables to see if we can decode this information just from the URL. 
 
 The schematic below breaks down the components of the API URL query. The variable list includes the variable(s) you are requesting. 
 
@@ -196,13 +158,34 @@ Here is what we find:
 			- The asterisk here returns all states. If you wanted to limit it to California, you would write 06.
 		-  `state` is a geography, which specifies the geographic area(s) of interest.
 
-Notice how you can search for the exact variables and geographies that you're looking for, and there is no need to store any data or make intermediate products to narrow down to the results you want.  You can also access way more data than what you can find on data.census.gov, and you don't have to use the file transfer protocol (FTP) either. For example, download a bunch of rows in an example.
 
-Verify some numbers like for California.
 
-## Next Steps
+## Closing out
 
-Now, for the assignment! 
+Congratulations on finding Census data results with the API key and a URL query!
+
+You can view the [full list of variables available through this specific survey](https://api.census.gov/data/2020/dec/dp/variables.html). The 11th row shows the variable `DP1_0001C` we just used. I admit this kind of page can be pretty overwhelming to navigate. However, once you are familiar with the different data products (e.g. Detailed Profile), you can just call for variables whose last column "Group" value = `DP1`. 
+
+:white_check_mark: Pros of API Query URL method:
+- You can search within exact years, data products, for the exact variables and geographies that you're looking for
+- There is no need to store any data or make intermediate products to narrow down to the results you want
+- If you retain the URL query, it is a reproducible data search (in contrast, for example, with selecting a bunch of variables in different dropdown menus or search tools)
+- You can access way more data than what you can find on data.census.gov, and you don't have to use the file transfer protocol (FTP) either.
+
+:x: Cons of API Query URL method:
+- Have to familiarize oneself with available data products, years, variables, available geographies ahead of time before doing the search
+- Need another step to save the data to a format for another use
+- More of a manual, tedious process, compared to other tools which do this work behind-the-scenes
+
+## Assignment
+
+(These instructions are repeated on the Canvas assignment page)
+
+For the query above in [Step 3](#step-3-use-the-key)), I performed a search for the total population count for each U.S. State based on the 2020 Decennial Census Detailed Profile results. I did this by performing a search with the `DP1_0001C` variable, which is described as `Count!!SEX AND AGE!!Total population` in the [full list of variables](https://api.census.gov/data/2020/dec/dp/variables.html).
+
+**Task**: Perform a search with the same specified dataset (2020 Decennial Census Detailed Profile). Use the same API key in the URL query method that we used above. This time, instead of finding results for Total population count for each state, find the percent of the population under 5 years old for each state. Report the variable you used and the first six rows of results (up to California).
+
+In your assignment, submit a text entry with the first six results of your result.
 
 [^A]: U.S. Census Bureau (July 30 2024). [Census Data API User Guide Website](https://www.census.gov/data/developers/guidance/api-user-guide.html)  or view the [PDF version](https://www.census.gov/content/dam/Census/data/developers/api-user-guide/api-user-guide.pdf). 
 [^B]:  U.S. Census Bureau (February 2020). [Using the Census Data API With the American Community Survey: What Data Users Need to Know](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_api_handbook_2020.pdf),  U.S. Government Printing Office, Washington, DC. 
