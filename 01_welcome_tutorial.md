@@ -12,6 +12,7 @@ Thankfully, there are ways to access the data via an Application Programming Int
 
 **What you'll need**:
 - [x] Access to the Internet
+	- According to [this 2020 Census guide](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_api_handbook_2020.pdf), Firefox and Chrome provide the functionality to view the results from API queries in all Web browsers, so users who do not use these may not be able view them.
 - [ ] A working email address
 - [ ] Mozilla Firefox OR Google Chrome browser[^1] 
 
