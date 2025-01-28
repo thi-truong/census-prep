@@ -12,7 +12,7 @@ Thankfully, there are ways to access the data via an Application Programming Int
 - Request Census API Key _(Already have a working API key? skip to [Step 3](#step-3-use-the-key))_
 - Activate Census API Key
 - Use Census API key in a query to get data
-- 
+ 
 **Estimated time**: 10 minutes
 
 **What you'll need**:
