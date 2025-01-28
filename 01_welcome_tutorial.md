@@ -47,7 +47,7 @@ After submitting, you should almost immediately receive an email with subject li
 ## Step 2. Activate the key
 
 ![Screenshot of email from the Census Bureau API Team. Subject line, "Census Data API Key request. Email body includes the API key which has been censored, followed by a link to activate the key](images/email_API_key_string.png)
-_Figure 2: Screenshot of activation email from Census Bureau_  
+_Figure 2: Screenshot of activation email from Census Bureau. The "Have Fun" sign off seems kinda nefarious to me not gonnna lie_  
 
 I censored the part with my own key, but it a 40-character string of numbers and letters, which I'll refer to henceforth as  `stringofcharactersandnumbers`.
 
