@@ -16,9 +16,9 @@ Thankfully, there are ways to access the data via an Application Programming Int
 - [ ] Mozilla Firefox OR Google Chrome browser[^1]<br>
 
 **What you'll do**:
-- [ ] Request Census API Key _(Already have a working API key? skip to [Step 3](#step-3-use-the-key))_
-- [ ] Activate Census API Key
-- [ ] Use Census API key in a query to get data
+- Request Census API Key _(Already have a working API key? skip to [Step 3](#step-3-use-the-key))_
+- Activate Census API Key
+- Use Census API key in a query to get data
 
 ---
 
@@ -91,6 +91,7 @@ Now that your API key has been activated, let's test out a query:
 3. Replace the last part after the equals sign in `key=stringofcharactersandnumbers` with your API key.
 4. Press enter/navigate to the address. You should be directed to plain text formatted data. Expand the accordion below to check. If it is the same, then congrats! You just pulled Census data with the API key.
 
+### Check your work
 <details>
 <summary><strong>Click to see contents of <code>get=NAME&DP1_0001C&for=state:*</code></strong></summary>
 
@@ -152,7 +153,7 @@ Now that your API key has been activated, let's test out a query:
 
 </details>
 
-### What did we just do?
+## Explanation of what we just did
 
 Let's look at the URL again to take a closer look at the dataset specification and variables.
 
@@ -203,10 +204,13 @@ Verify some numbers like for California.
 
 Now, for the assignment! 
 
-[^A]: U.S. Census Bureau (July 30 2024). [Census Data API User Guide Website](https://www.census.gov/data/developers/guidance/api-user-guide.html)  or view the [PDF version](https://www.census.gov/content/dam/Census/data/developers/api-user-guide/api-user-guide.pdf).<br>
-[^B]:  U.S. Census Bureau (February 2020). [Using the Census Data API With the American Community Survey: What Data Users Need to Know](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_api_handbook_2020.pdf),  U.S. Government Printing Office, Washington, DC.<br> 
-[^C]: [Transcript, Demystifying the Census API Transcript](https://www2.census.gov/about/training-workshops/2020/2020-07-22-cedcsi-transcript.pdf) (pdf). 22 July 2020.<br>
-[^1]: According to [this 2020 Census guide](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_api_handbook_2020.pdf), Firefox and Chrome provide the functionality to view the results from API queries in all Web browsers, so users who do not use these may not be able view them.<br>
+[^A]: U.S. Census Bureau (July 30 2024). [Census Data API User Guide Website](https://www.census.gov/data/developers/guidance/api-user-guide.html)  or view the [PDF version](https://www.census.gov/content/dam/Census/data/developers/api-user-guide/api-user-guide.pdf).
+
+[^B]:  U.S. Census Bureau (February 2020). [Using the Census Data API With the American Community Survey: What Data Users Need to Know](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_api_handbook_2020.pdf),  U.S. Government Printing Office, Washington, DC. 
+
+[^C]: [Transcript, Demystifying the Census API Transcript](https://www2.census.gov/about/training-workshops/2020/2020-07-22-cedcsi-transcript.pdf) (pdf). 22 July 2020.
+
+[^1]: According to [this 2020 Census guide](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_api_handbook_2020.pdf), Firefox and Chrome provide the functionality to view the results from API queries in all Web browsers, so users who do not use these may not be able view them.
 
 This is a one page course template was made with [Docsify-This.net](https://docsify-this.net/#/). Markdown draft in [StackEdit](https://stackedit.io/).
 
