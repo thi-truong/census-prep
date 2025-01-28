@@ -8,14 +8,17 @@ The U.S. Census Bureau offers a lot of public data online. You could use their D
 
 Thankfully, there are ways to access the data via an Application Programming Interface ("**API**") key[^A]. Once you have an API key, you can extract raw statistical data in machine-readable format from all sorts of Census Bureau surveys and programs[^C]. You can use it with tools you might already use, like JSON (ArcGIS uses REST APIs), R ([tigris](https://github.com/walkerke/tigris)), Python ([Pygris](https://walker-data.com/pygris/)), the list goes on. But...do you need to use those tools? **No!** You can specify your request as a query string in a URL and get the data that you're looking for, all in your web browser[^B]. If you have ever edited a URL, then you have already practiced this many times before. This is the method we are using today.
 
-You will request a Census API Key, activate the Census API Key, and then use it in a query to get data. Already have a working API key? skip to [Step 3](#step-3-use-the-key)
-
 **Estimated time**: 10 minutes
 
 **What you'll need**:
 - [x] Access to the Internet
 - [ ] A working email address
-- [ ] Mozilla Firefox OR Google Chrome browser[^1]
+- [ ] Mozilla Firefox OR Google Chrome browser[^1] 
+
+**What you'll do**:
+- [ ] Request Census API Key _(Already have a working API key? skip to [Step 3](#step-3-use-the-key))_
+- [ ] Activate Census API Key
+- [ ] Use Census API key in a query to get data
 
 ---
 
@@ -88,7 +91,6 @@ Now that your API key has been activated, let's test out a query:
 3. Replace the last part after the equals sign in `key=stringofcharactersandnumbers` with your API key.
 4. Press enter/navigate to the address. You should be directed to plain text formatted data. Expand the accordion below to check. If it is the same, then congrats! You just pulled Census data with the API key.
 
-### Check your work
 <details>
 <summary><strong>Click to see contents of <code>get=NAME&DP1_0001C&for=state:*</code></strong></summary>
 
@@ -150,7 +152,7 @@ Now that your API key has been activated, let's test out a query:
 
 </details>
 
-## Explanation of what we just did
+### What did we just do?
 
 Let's look at the URL again to take a closer look at the dataset specification and variables.
 
@@ -201,7 +203,7 @@ Verify some numbers like for California.
 
 Now, for the assignment! 
 
-[^A]: U.S. Census Bureau (July 30 2024). [Census Data API User Guide Website](https://www.census.gov/data/developers/guidance/api-user-guide.html)  or view the [PDF version](https://www.census.gov/content/dam/Census/data/developers/api-user-guide/api-user-guide.pdf).
+[^A]: U.S. Census Bureau (July 30 2024). [Census Data API User Guide Website](https://www.census.gov/data/developers/guidance/api-user-guide.html)  or view the [PDF version](https://www.census.gov/content/dam/Census/data/developers/api-user-guide/api-user-guide.pdf). 
 [^B]:  U.S. Census Bureau (February 2020). [Using the Census Data API With the American Community Survey: What Data Users Need to Know](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_api_handbook_2020.pdf),  U.S. Government Printing Office, Washington, DC. 
 [^C]: [Transcript, Demystifying the Census API Transcript](https://www2.census.gov/about/training-workshops/2020/2020-07-22-cedcsi-transcript.pdf) (pdf). 22 July 2020.
 [^1]: According to [this 2020 Census guide](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_api_handbook_2020.pdf), Firefox and Chrome provide the functionality to view the results from API queries in all Web browsers, so users who do not use these may not be able view them.
