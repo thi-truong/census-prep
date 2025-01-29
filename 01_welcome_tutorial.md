@@ -93,8 +93,7 @@ Now that your API key has been activated, let's test out a query:
 `https://api.census.gov/data/2020/dec/dp?get=NAME&DP1_0001C&for=state:*&key=stringofcharactersandnumbers`
 2. Paste the link into your web browser, but do not press enter/go.
 3. Replace the last part after the equals sign in `key=stringofcharactersandnumbers` with your API key.
-4. Press enter/navigate to the address. You should be directed to plain text formatted data. Expand the accordion below to check. If it is the same, then congrats! You just pulled Census data with the API key.
-
+4. Press enter/navigate to the address. You should be directed to plain text formatted data. 
 
 ### Check your work
 
@@ -110,9 +109,9 @@ Below are the first 6 printed rows of the query result for `get=NAME&DP1_0001C&f
 ```
 
 Does your result match this?
-- **Yes**, then proceed with the assignment.
+- **Yes**, then congrats! You just pulled Census data with the API key. Proceed.
 - **No**, then reach out to me and we can try to troubleshoot. Do not include the full URL with API key when contacting me.
- 
+
 ### Let's break down your query
 
 We just printed results for **Total Population Count** for each U.S. State in the 2020 Decennial Census. 
@@ -125,46 +124,25 @@ The schematic below breaks down the components of the API URL query. The variabl
 
 _Figure 4: Decoding an API URL address: Components of a Census Data API URL query_  
 
-Table explaining variables
+Table explaining variables and components to build the API request, step-by-step:
+
 | Part | Phrase | Component | Description |
 |--|--|--|--|
 | Specified Dataset | `"2020/dec/dp"` | `2020`| Year |
 | | | `dec` | Decennial Census |
-| | | `dp`| Detailed Profile |
-| Get? or Variable | `"NAME"` | `for=`| is a predicate clause |
-| | | `NAME` | provides the name of the geographic area(s) that you are using to limit your search |
-| Variable  |`"DP1_0001C"` | `DP1` | Data Profile Table 1 |
-| | | `0001C` | 1 is column 1, and C is the third row. Total population count |
-| Predicate | `"for=state*"`| `for=` | is a predicate clause |
-| | | `state*` | is a geography, which specifies the geographic area(s) of interest. The asterisk * returns all states. |
+| | | `dp`| Data Profile |
+| Query/Variables | `"NAME"` | `for=`| A predicate clause, which specifies how variables should be filtered or limited |
+| | | `NAME` | Provides the name of the geographic area(s) that you are using to limit your search |
+| Query/Variables  |`"DP1_0001C"` | `DP1` | Data Profile Table 1 |
+| | | `0001C` | 001 is column 1. Letter C means we're on the 3rd row of a table containing many population observations. In total, this variable specifies total population count |
+| Query/Variables | `"for=state*"`| `for=` |  A predicate clause, which specifies how variables should be filtered or limited |
+| | | `state*` | A geography, which specifies the geographic area(s) of interest. The asterisk * returns all states. If you wanted to limit it to California, you would write 06. |
 
-Building the API request, step-by-step
-
-Table explaining variables
-| Part | Phrase | Description | 
-|--|--|--|
-| Specified Dataset | `"2020/dec/dp"` | https://api.census.gov/data/2020.html says Census API: Datasets in /data/2020 and its descendants. Last column, "API Base URL"  tells you how to specify |
-| Get? or Variable | `"NAME"` | is a predicate clause |
-| Variable  |`"DP1_0001C"`| Data Profile Table 1 |
-| Predicate | `"for=state*"`| is a predicate clause |
-
-Here is what we find: 
--   Data set source specified by `2020/dec/dp` which refers to the 2020 Decennial Census Detailed Profile (hence, "dec" and "dp")
--  Variables. You can include up to 50 variables in a single API query (separated by commas). In this data set:
-	- `NAME` provides the name of the geographic area(s) that you are using to limit your search.
-	- `DP1_0001C` variable specifies total population. It is a count (not standardized or normalized). The letter C means we're on the 3rd row of a table containing a bunch of population observations (1 = men, 2 = women, I think)
-	- `for=state*` has a couple things going on.
-		- `for`  is a predicate clause, which specifies how variables should be filtered or limited (for example, for certain geographic areas).
-			- The asterisk here returns all states. If you wanted to limit it to California, you would write 06.
-		-  `state` is a geography, which specifies the geographic area(s) of interest.
-
-
+You can view the [full list of variables available through this specific survey](https://api.census.gov/data/2020/dec/dp/variables.html). The 11th row shows the variable `DP1_0001C` we just used. I admit this kind of page can be pretty overwhelming to navigate. However, once you are familiar with the different data products (e.g. Detailed Profile), searching for variables is pretty quick.
 
 ## Closing out
 
-Congratulations on finding Census data results with the API key and a URL query!
-
-You can view the [full list of variables available through this specific survey](https://api.census.gov/data/2020/dec/dp/variables.html). The 11th row shows the variable `DP1_0001C` we just used. I admit this kind of page can be pretty overwhelming to navigate. However, once you are familiar with the different data products (e.g. Detailed Profile), you can just call for variables whose last column "Group" value = `DP1`. 
+Congratulations on finding Census data results with the API key via URL query! Let's reflect on some of the advantages and disadvantages of using this method to gather census data.
 
 :white_check_mark: Pros of API Query URL method:
 - You can search within exact years, data products, for the exact variables and geographies that you're looking for
@@ -177,19 +155,25 @@ You can view the [full list of variables available through this specific survey]
 - Need another step to save the data to a format for another use
 - More of a manual, tedious process, compared to other tools which do this work behind-the-scenes
 
-## Assignment
+## Assignment Part 1
 
-(These instructions are repeated on the Canvas assignment page)
+(These instructions are repeated on the Canvas assignment page for Week 6 Assignment under heading "Part 1")
 
-For the query above in [Step 3](#step-3-use-the-key)), I performed a search for the total population count for each U.S. State based on the 2020 Decennial Census Detailed Profile results. I did this by performing a search with the `DP1_0001C` variable, which is described as `Count!!SEX AND AGE!!Total population` in the [full list of variables](https://api.census.gov/data/2020/dec/dp/variables.html).
+**Background**:
+- In Tutorial [Step 3](#step-3-use-the-key), we performed a search for the total population count with the `DP1_0001C` variable, which is described as `Count!!SEX AND AGE!!Total population` in the [full list of variables](https://api.census.gov/data/2020/dec/dp/variables.html) for the 2020 Decennial Census Data Profile.
+- For this assignment, you will use your API key and the same URL query method to return results for a different variable for all states in the same dataset (2020 Decennial Census Detailed Profile).
 
-**Task**: Perform a search with the same specified dataset (2020 Decennial Census Detailed Profile). Use the same API key in the URL query method that we used above. This time, instead of finding results for Total population count for each state, find the percent of the population under 5 years old for each state. Report the variable you used and the first six rows of results (up to California).
+**Task**:
+- Find the percent of the population under 5 years old for all states, based on the 2020 Decennial Census results.
+- Submit a text entry of the first six rows of results (up to California).
+- *Hint: Find the appropriate variable in the [full list](https://api.census.gov/data/2020/dec/dp/variables.html). It should be not very many rows away from `DP1_0001C`.* 
 
-In your assignment, submit a text entry with the first six results of your result.
+---
 
 [^A]: U.S. Census Bureau (July 30 2024). [Census Data API User Guide Website](https://www.census.gov/data/developers/guidance/api-user-guide.html)  or view the [PDF version](https://www.census.gov/content/dam/Census/data/developers/api-user-guide/api-user-guide.pdf). 
 [^B]:  U.S. Census Bureau (February 2020). [Using the Census Data API With the American Community Survey: What Data Users Need to Know](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_api_handbook_2020.pdf),  U.S. Government Printing Office, Washington, DC. 
 [^C]: [Transcript, Demystifying the Census API Transcript](https://www2.census.gov/about/training-workshops/2020/2020-07-22-cedcsi-transcript.pdf) (pdf). 22 July 2020.
+[^D]:  U.S. Census Bureau (December 2024). [Census ACS Data Table IDs explained](https://www.census.gov/programs-surveys/acs/data/data-tables/table-ids-explained.html).
 
 This is a one page course template was made with [Docsify-This.net](https://docsify-this.net/#/). Markdown draft in [StackEdit](https://stackedit.io/).
 
