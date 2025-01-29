@@ -19,13 +19,13 @@ But...do you need to use all these tools to use the API? **No!** You can specify
 
 **Estimated time**: 10 minutes
 
-:clipboard: **What you'll need**:
+**What you'll need**:
 - [x] Access to the Internet
 - [ ] Mozilla Firefox OR Google Chrome browser
 	- According to [this 2020 Census guide](https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_api_handbook_2020.pdf), these two browsers provide functionality to view the results from API queries. Other users may not be able view.
 - [ ] A working email address
 
-:arrow_forward: **What you'll do**:
+**What you'll do**:
 1. Request Census API Key _(Already have a working API key? skip to [Step 3](#step-3-use-the-key))_
 2. Activate Census API Key
 3. Use Census API key in a query to get data
