@@ -112,7 +112,7 @@ Does your result match this?
 - **Yes**, then congrats! You just pulled Census data with the API key. Proceed.
 - **No**, then reach out to me and we can try to troubleshoot. Do not include the full URL with API key when contacting me.
 
-### Let's break down your query
+### What did we just do?
 
 We just printed results for **Total Population Count** for each U.S. State in the 2020 Decennial Census. 
 
