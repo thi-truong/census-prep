@@ -1,8 +1,13 @@
 # Tutorial: How to get a Census API Key up and running
- 
- This is a tutorial on how to get a Census API key and use it with the URL feature. It is written with UCI folks in mind, but it should work for anyone.
+By Thi Truong
 
- If you are viewing this in Canvas, you can also just [view the Github page here](https://github.com/thi-truong/census-prep/blob/main/01_tutorial_get_census_API_key_running.md).
+> [!NOTE]
+> If you are viewing this in Canvas, you can also just <a href="https://github.com/thi-truong/census-prep/blob/main/01_tutorial_get_census_API_key_running.md" target="_blank">view the Github page</a> instead (opens in new window).
+
+
+## Introduction
+
+This is a tutorial on how to get a Census API key and use it with the URL feature. It is written with UCI folks in mind, but it should work for anyone.
 
  **Why?**
 
@@ -25,8 +30,6 @@ But...do you need to use all these tools to use the API? **No!** You can specify
 2. Activate Census API Key
 3. Use Census API key in a query to get data
 4. Complete an assignment based on the query results
-
----
 
 ## Step 1. Request a key
 
@@ -60,7 +63,7 @@ Click "Click here to activate your key".
 If you see a success message, then proceed to [Step 3](#step-3-use-the-key)
 
 <details>
-<summary><strong>If you got this error message... (Click to expand)</strong><br/><br/>
+<summary><strong>If you got this error message, then click here to expand</strong><br/><br/>
 <blockquote><strong>Error</strong><br/>
 You've attempted to validate an unknown key. If it has been more than 48 hours since you submitted your request for this API key then the request has been removed from the system. Please request a new key and activate it within 48 hours.
 </blockquote></summary>
@@ -85,7 +88,8 @@ You've attempted to validate an unknown key. If it has been more than 48 hours s
 
 </details>
 
----
+> [!WARNING]
+> Keep your API key secure. It is best to make sure it is kept securely and treat it like a password. If you share your code or a result with someone, make sure to delete the key if it is present, and replace with a placeholder like `[your-key-here]`, etc. 
 
 ## Step 3. Use the key
 
@@ -111,8 +115,8 @@ Below are the first 6 printed rows of the query result for `get=NAME&DP1_0001C&f
 ```
 
 Does your result match this?
-- **Yes**, then congrats! You just pulled Census data with the API key. Proceed.
-- **No**, then reach out to me and we can try to troubleshoot. Do not include the full URL with API key when contacting me.
+- If **Yes**, then congrats! You just pulled Census data with the API key. Proceed with the explanation and assignment.
+- If **No**, then reach out to me and we can try to troubleshoot. Remember not to include the full URL with API key when contacting me.
 
 ### What did we just do?
 
@@ -146,7 +150,7 @@ You can view the [full list of variables available through this specific survey]
 
 Congratulations on finding Census data results with the API key via URL query! Let's reflect on some of the advantages and disadvantages of using this method to gather census data.
 
-:white_check_mark: Pros of API Query URL method:
+:heavy_check_mark: Pros of API Query URL method:
 - You can search within exact years, data products, for the exact variables and geographies that you're looking for
 - There is no need to store any data or make intermediate products to narrow down to the results you want
 - If you retain the URL query, it is a reproducible data search (in contrast, for example, with selecting a bunch of variables in different dropdown menus or search tools)
@@ -159,7 +163,7 @@ Congratulations on finding Census data results with the API key via URL query! L
 
 ## Assignment Part 1
 
-(These instructions are repeated on the Canvas assignment page for Week 6 Assignment under heading "Part 1")
+(These instructions are repeated on the [Canvas Week 6 Assignment page](https://canvas.eee.uci.edu/courses/66109/assignments/1538937) under heading "Part 1")
 
 **Background**:
 - In Tutorial [Step 3](#step-3-use-the-key), we performed a search for the total population count with the `DP1_0001C` variable, which is described as `Count!!SEX AND AGE!!Total population` in the [full list of variables](https://api.census.gov/data/2020/dec/dp/variables.html) for the 2020 Decennial Census Data Profile.
