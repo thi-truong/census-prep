@@ -59,15 +59,16 @@ Until you click the link in this email, the key will not work yet!
 
 Click "Click here to activate your key".
 
-If you see a success message, then proceed to [Step 3](#step-3-use-the-key)
+Did you get a success message? Congrats! Proceed to Step 3.
 
 <details>
-<summary><strong>If you got this error message, then click here to expand</strong><br/><br/>
-<blockquote><strong>Error</strong><br/>
-You've attempted to validate an unknown key. If it has been more than 48 hours since you submitted your request for this API key then the request has been removed from the system. Please request a new key and activate it within 48 hours.
-</blockquote></summary>
+<summary>Click here if you got an error message<br/><br/>
+</summary>
 
-<p>A possible explanation for the error:</p>
+If you got an error message saying something like this...
+> You've attempted to validate an unknown key. If it has been more than 48 hours since you submitted your request for this API key then the request has been removed from the system. Please request a new key and activate it within 48 hours.
+
+Then, there might be a possible explanation for the error related to your institutional email settings.
 
 <p>If you used your UCI email address (or similar institution's address), the problem might be the activation link was due to <a href="https://www.oit.uci.edu/services/communication-collaboration/proofpoint/">Proofpointy</a>. The process is shown in Fig. 3, where an example original address to Reddit is redirected to a new address. </p>
 
