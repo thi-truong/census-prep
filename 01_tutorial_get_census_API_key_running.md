@@ -2,6 +2,8 @@
  
  This is a tutorial on how to get a Census API key and use it with the URL feature. It is written with UCI folks in mind, but it should work for anyone.
 
+ If you are viewing this in Canvas, you can also just [view the Github page here](https://github.com/thi-truong/census-prep/blob/main/01_tutorial_get_census_API_key_running.md).
+
  **Why?**
 
 The U.S. Census Bureau offers a lot of public data online. You could use their Data Explorer tool to look at tables. You could use their FTP program. Nevertheless, raw Census data gathering is well known to be a pain in the butt. If it wasn't, [these kinds of fiverr gigs](https://www.fiverr.com/s/EgYBQG9) wouldn't exist. :weary:
