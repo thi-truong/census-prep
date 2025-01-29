@@ -1,8 +1,7 @@
 # Tutorial: How to get a Census API Key up and running
 By Thi Truong
 
-> [!NOTE]
-> If you are viewing this in Canvas, you can also just <a href="https://github.com/thi-truong/census-prep/blob/main/01_tutorial_get_census_API_key_running.md" target="_blank">view the Github page</a> instead (opens in new window).
+> **Note**:  If you are viewing this in Canvas, you can also just <a href="https://github.com/thi-truong/census-prep/blob/main/01_tutorial_get_census_API_key_running.md" target="_blank">view the Github page</a> instead (opens in new window). Some formatting will make more sense on the Github page, but either way of viewing is fine.
 
 
 ## Introduction
@@ -88,8 +87,7 @@ You've attempted to validate an unknown key. If it has been more than 48 hours s
 
 </details>
 
-> [!WARNING]
-> Keep your API key secure. It is best to make sure it is kept securely and treat it like a password. If you share your code or a result with someone, make sure to delete the key if it is present, and replace with a placeholder like `[your-key-here]`, etc. 
+ :warning: Keep your API key secure. It is best to make sure it is kept securely and treat it like a password. If you share your code or a result with someone, make sure to delete the key if it is present, and replace with a placeholder like `[your-key-here]`, etc. 
 
 ## Step 3. Use the key
 
@@ -116,7 +114,7 @@ Below are the first 6 printed rows of the query result for `get=NAME&DP1_0001C&f
 
 Does your result match this?
 - If **Yes**, then congrats! You just pulled Census data with the API key. Proceed with the explanation and assignment.
-- If **No**, then reach out to me and we can try to troubleshoot. Remember not to include the full URL with API key when contacting me.
+- If **No**, then reach out to me and we can try to troubleshoot. Do not include the full URL with API key when contacting me.
 
 ### What did we just do?
 
