@@ -1,8 +1,7 @@
 # Tutorial: How to get a Census API Key up and running
 By Thi Truong
 
-> **Note**:  If you are viewing this in Canvas, you can also just <a href="https://github.com/thi-truong/census-prep/blob/main/01_tutorial_get_census_API_key_running.md" target="_blank">view the Github page</a> instead (opens in new window). Some formatting will make more sense on the Github page, but either way of viewing is fine.
-
+> **Note**:  If you are viewing this in Canvas, you can also just <a href="https://github.com/thi-truong/census-prep/blob/main/01_tutorial_get_census_API_key_running.md" target="_blank">view the Github page</a> instead.
 
 ## Introduction
 
@@ -10,7 +9,7 @@ This is a tutorial on how to get a Census API key and use it with the URL featur
 
  **Why?**
 
-The U.S. Census Bureau offers a lot of public data online. You could use their Data Explorer tool to look at tables. You could use their FTP program. Nevertheless, raw Census data gathering is well known to be a pain in the butt. If it wasn't, [these kinds of fiverr gigs](https://www.fiverr.com/s/EgYBQG9) wouldn't exist. :weary:
+The U.S. Census Bureau offers a lot of public data online. You could view Quick Fact Sheets, use their Data Explorer tool, use file transfer protocol etc. Neverthelesss, gathering raw Census data is often tedious. If it wasn't, [these kinds of fiverr gigs](https://www.fiverr.com/s/EgYBQG9) wouldn't exist. :weary:
 
 Thankfully, there are ways to access the data via an Application Programming Interface ("**API**") key[^A]. Once you have an API key, you can extract raw statistical data in machine-readable format from all sorts of Census Bureau surveys and programs[^C]. You can use it with tools you might already use, like JSON (ArcGIS uses REST APIs), R ([tigris](https://github.com/walkerke/tigris)), Python ([Pygris](https://walker-data.com/pygris/)), the list goes on.
 
@@ -37,7 +36,6 @@ _Figure 1: Web Form to Request a Census Data API Key_
 
 1. Go to [Request a U.S. Census Data API Key](https://api.census.gov/data/key_signup.html).
 2. Read the [Terms of service](https://www.census.gov/data/developers/about/terms-of-service.html) linked in the last field before the submit button.
-	- Summary: When getting information from Census Bureau data, attribute the data whenever you use it and use it in ways that do not violate geoprivacy, etc.
 3. Fill out the form
 	1. I entered  `University of California, Irvine` for organization
 	2. Any email address should work. I used my UCI email address
@@ -51,7 +49,7 @@ After submitting, you should almost immediately receive an email with subject li
 ## Step 2. Activate the key
 
 ![Screenshot of email from the Census Bureau API Team. Subject line, "Census Data API Key request. Email body includes the API key which has been censored, followed by a link to activate the key](images/email_API_key_string.png)
-_Figure 2: Screenshot of activation email from Census Bureau. The "Have Fun" sign off seems kinda nefarious to me not gonnna lie_  
+_Figure 2: Screenshot of activation email from Census Bureau. The "Have Fun" sign off is...a choice._  
 
 I censored the part with my own key, but it a 40-character string of numbers and letters, which I'll refer to henceforth as  `stringofcharactersandnumbers`.
 
@@ -88,7 +86,7 @@ Then, there might be a possible explanation for the error related to your instit
 
 </details>
 
- :warning: Keep your API key secure. It is best to make sure it is kept securely and treat it like a password. If you share your code or a result with someone, make sure to delete the key if it is present, and replace with a placeholder like `[your-key-here]`, etc. 
+ :warning: Keep your API key secure. It is best to make sure it is kept securely and treat it like a password. If you share your code or a result with someone, make sure to delete the key if it is present, and replace with a placeholder like `[your-key-here]`, etc. Remember the Terms of Service when getting information from Census Bureau data-- attribute the data whenever you use it and do not use the data to violate geoprivacy.
 
 ## Step 3. Use the key
 
