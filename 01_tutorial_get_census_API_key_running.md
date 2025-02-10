@@ -68,7 +68,7 @@ If you got an error message saying something like this...
 
 Then, there might be a possible explanation for the error related to your institutional email settings.
 
-<p>If you used your UCI email address (or similar institution's address), the problem might be the activation link was due to <a href="https://www.oit.uci.edu/services/communication-collaboration/proofpoint/">Proofpointy</a>. The process is shown in Fig. 3, where an example original address to Reddit is redirected to a new address. </p>
+<p>If you used your UCI email address (or similar institution's address), the problem might be the activation link was due to <a href="https://www.oit.uci.edu/services/communication-collaboration/proofpoint/">Proofpoint</a>. The process is shown in Fig. 3, where an example original address to Reddit is redirected to a new address. </p>
 
 <figure>
 <img src="images/proofpoint_emails_process_edited.svg" alt="Sequence diagram of a link to Reddit.com sent to UCI recipient, which is deemed malicious by Proofpoint. Link is rerouted with URL defense and the result is a link with a bunch of extra crap added to it. Example of link to https://www.reddit.com gets 120 characters appended to it"/><br/>
