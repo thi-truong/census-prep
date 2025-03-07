@@ -72,7 +72,7 @@ Then, there might be a possible explanation for the error related to your instit
 <img src="images/proofpoint_emails_process_edited.svg" alt="Sequence diagram of a link to Reddit.com sent to UCI recipient, which is deemed malicious by Proofpoint. Link is rerouted with URL defense and the result is a link with a bunch of extra crap added to it. Example of link to https://www.reddit.com gets 120 characters appended to it"/><br/>
  <figcaption><em>Figure 3: Example sequence of a link getting modified through Proofpoint email security process. Note: the result URL is similar to the real output, but this is fake and for demonstration purposes.</em> </figcaption></figure><br/><br/>
  
-<p> However, even you, the recipient without the original link, you <em>can</em> still identify the original link within the mess upon a closer look. So, try to apply the observation to the link sent to your email:</p>
+<p> However, you <em>can</em> identify the original link within the mess upon a closer look. Once you have identified the reddit URL in the example, apply the observation to the link sent to your email:</p>
 <ol>
 	<li>Right click the link text "click here to activate your key". Select "Copy link address"</li>
 	<li>Paste the URL in a text editor and assess: If the address been modified, you may be able to find the original URL, which should begin with <code>https....</code> and end with a string of numbers and letters that matches the key in your email (before <code>__;!!</code>). Can you identify it?
