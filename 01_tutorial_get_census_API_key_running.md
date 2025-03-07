@@ -97,7 +97,7 @@ Now that your API key has been activated, let's test out a query:
 ### If it didn't work...
 
 If you activated the key successfully but you receive an error message like "Invalid Key" or the URL doesn't work at all...
-- Are you speedrunning through this tutorial? Wait a few more minutes, and then try the query again. There is a little bit of processing time needed before the query works.
+- Are you completing the steps quickly? Wait a few more minutes, and then try the query again. There is a little bit of processing time needed before the query works.
 - If more than a few minutes have passed, then I recommend trying to go through the process again with the same email address. If you still run into issues, try requesting the key with a different email address (preferably from a different domain as the first, in case that is an issue).
 
 ### Check your work
