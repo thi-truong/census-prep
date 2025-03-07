@@ -59,9 +59,7 @@ Click "Click here to activate your key".
 
 Did you get a success message? Congrats! Proceed to Step 3.
 
-<details>
-<summary>Click here if you got an error message<br/><br/>
-</summary>
+### If you got an error message...
 
 If you got an error message saying something like this...
 > You've attempted to validate an unknown key. If it has been more than 48 hours since you submitted your request for this API key then the request has been removed from the system. Please request a new key and activate it within 48 hours.
@@ -84,19 +82,23 @@ Then, there might be a possible explanation for the error related to your instit
 		</ul>
 </ol>
 
-</details>
-
- :warning: Keep your API key secure. It is best to make sure it is kept securely and treat it like a password. If you share your code or a result with someone, make sure to delete the key if it is present, and replace with a placeholder like `[your-key-here]`, etc. Remember the Terms of Service when getting information from Census Bureau data-- attribute the data whenever you use it and do not use the data to violate geoprivacy.
-
 ## Step 3. Use the key
+
+:warning: Keep your API key secure. It is best to make sure it is kept securely and treat it like a password. If you share your code or a result with someone, make sure to delete the key if it is present, and replace with a placeholder like `[your-key-here]`, etc. Remember the Terms of Service when getting information from Census Bureau data-- attribute the data whenever you use it and do not use the data to violate geoprivacy.
 
 Now that your API key has been activated, let's test out a query:
 
 1. Copy this link 
 `https://api.census.gov/data/2020/dec/dp?get=NAME&DP1_0001C&for=state:*&key=stringofcharactersandnumbers`
 2. Paste the link into your web browser, but do not press enter/go.
-3. Replace the last part after the equals sign in `key=stringofcharactersandnumbers` with your API key.
-4. Press enter/navigate to the address. You should be directed to plain text formatted data. 
+3. Replace `stringofcharactersandnumbers` with your API key. Make sure not to delete too much of the URL, e.g. `&key=`.
+4. Press enter/navigate to the address. You should be directed to plain text formatted data.
+
+### If it didn't work...
+
+If you activated the key successfully but you receive an error message like "Invalid Key" or the URL doesn't work at all...
+- Are you speedrunning through this tutorial? Wait a few more minutes, and then try the query again. There is a little bit of processing time needed before the query works.
+- If more than a few minutes have passed, then I recommend trying to go through the process again with the same email address. If you still run into issues, try requesting the key with a different email address (preferably from a different domain as the first, in case that is an issue).
 
 ### Check your work
 
@@ -182,3 +184,5 @@ This is a one page course template was made with [Docsify-This.net](https://docs
 
 Tutorial by Thi Truong is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0).
 ![CC BY](images/cc_by.png)
+
+Last updated March 7, 2025. Incorporated revisions based on feedback from Tatiana Flores, Victoria Nguyen, and Robert Garcia.
