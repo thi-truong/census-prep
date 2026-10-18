@@ -160,19 +160,6 @@ Congratulations on finding Census data results with the API key via URL query! L
 - Need another step to save the data to a format for another use
 - More of a manual, tedious process, compared to other tools which do this work behind-the-scenes
 
-## Assignment Part 1
-
-(These instructions are repeated on the [Canvas Week 6 Assignment page](https://canvas.eee.uci.edu/courses/66109/assignments/1538937) under heading "Part 1")
-
-**Background**:
-- In Tutorial [Step 3](#step-3-use-the-key), we performed a search for the total population count with the `DP1_0001C` variable, which is described as `Count!!SEX AND AGE!!Total population` in the [full list of variables](https://api.census.gov/data/2020/dec/dp/variables.html) for the 2020 Decennial Census Data Profile.
-- For this assignment, you will use your API key and the same URL query method to return results for a different variable for all states in the same dataset (2020 Decennial Census Detailed Profile).
-
-**Task**:
-- Find the percent of the population under 5 years old for all states, based on the 2020 Decennial Census results.
-- Submit a text entry of the first six rows of results (up to California).
-- *Hint: Find the appropriate variable in the [full list](https://api.census.gov/data/2020/dec/dp/variables.html). It should be not very many rows away from `DP1_0001C`.* 
-
 ---
 
 [^A]: U.S. Census Bureau (July 30 2024). [Census Data API User Guide Website](https://www.census.gov/data/developers/guidance/api-user-guide.html)  or view the [PDF version](https://www.census.gov/content/dam/Census/data/developers/api-user-guide/api-user-guide.pdf). 
