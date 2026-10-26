@@ -135,15 +135,15 @@ Table explaining variables and components to build the API request, step-by-step
 |--|--|--|--|
 | Specified Dataset | `"2020/dec/dp"` | `2020`| Year |
 | | | `dec` | Decennial Census |
-| | | `dp`| Data Profile |
+| | | `dp`| Demographic Profile |
 | Query/Variables | `"NAME"` | `for=`| A predicate clause, which specifies how variables should be filtered or limited |
 | | | `NAME` | Provides the name of the geographic area(s) that you are using to limit your search |
-| Query/Variables  |`"DP1_0001C"` | `DP1` | Data Profile Table 1 |
+| Query/Variables  |`"DP1_0001C"` | `DP1` | Demographic Profile Table 1 |
 | | | `0001C` | 001 is column 1. Letter C means we're on the 3rd row of a table containing many population observations. In total, this variable specifies total population count |
 | Query/Variables | `"for=state*"`| `for=` |  A predicate clause, which specifies how variables should be filtered or limited |
 | | | `state*` | A geography, which specifies the geographic area(s) of interest. The asterisk * returns all states. If you wanted to limit it to California, you would write 06. |
 
-You can view the [full list of variables available through this specific survey](https://api.census.gov/data/2020/dec/dp/variables.html). The 11th row shows the variable `DP1_0001C` we just used. I admit this kind of page can be pretty overwhelming to navigate. However, once you are familiar with the different data products (e.g. Detailed Profile), searching for variables is pretty quick.
+You can view the [full list of variables available through this specific survey](https://api.census.gov/data/2020/dec/dp/variables.html). The 11th row shows the variable `DP1_0001C` we just used. Once you are familiar with the different datasets in https://api.census.gov/data.html, navigating to them and searching for variables is more intuitive.
 
 ## Closing out
 
