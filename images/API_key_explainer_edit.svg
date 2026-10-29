@@ -138,12 +138,10 @@
         <rect id="e" data-name="&amp;amp; highlight" class="x" x="772.59" y="97.68" width="16.4" height="30.5"/>
         <rect id="f" data-name="&amp;amp; highlight" class="x" x="640.74" y="97.68" width="14.31" height="30.5"/>
       </g>
-      <text class="ac" transform="translate(716.53 243.75)"><tspan x="0" y="0">separators</tspan></text>
+      <text class="ac" transform="translate(716.53 243.75)"><tspan x="60" y="0">predicate</tspan></text>
       <g id="g" data-name="arrows">
         <g id="h" data-name="arrow">
           <g>
-            <line class="ak" x1="654.39" y1="148.6" x2="701.05" y2="209.36"/>
-            <polygon class="z" points="647.94 140.2 652.19 155.75 654.87 149.23 661.86 148.33 647.94 140.2"/>
           </g>
         </g>
         <g id="i" data-name="arrow">
@@ -203,6 +201,6 @@
     </g>
   </g>
   <g id="w" data-name="URL">
-    <text class="ax" transform="translate(1.84 119.57)"><tspan class="ae" x="0" y="0">https://api.census.gov/</tspan><tspan class="ah" x="306.25" y="0">data/2020/dec/dp</tspan><tspan class="at" x="519.3" y="0">?</tspan><tspan class="ag" x="532.61" y="0">get=NAME</tspan><tspan class="ai" x="639.13" y="0">&amp;</tspan><tspan class="ag" x="652.45" y="0">DP1_0001C</tspan><tspan class="ai" x="772.29" y="0">&amp;</tspan><tspan class="ag" x="785.6" y="0">for=state:*</tspan><tspan class="ai" x="932.07" y="0">&amp;</tspan><tspan class="ad" x="945.39" y="0">key=stringofcharactersandnumbers</tspan></text>
+    <text class="ax" transform="translate(1.84 119.57)"><tspan class="ae" x="0" y="0">https://api.census.gov/</tspan><tspan class="ah" x="306.25" y="0">data/2020/dec/dp</tspan><tspan class="at" x="519.3" y="0">?</tspan><tspan class="ag" x="532.61" y="0">get=NAME</tspan><tspan class="ai" x="639.13" y="0">,</tspan><tspan class="ag" x="652.45" y="0">DP1_0001C</tspan><tspan class="ai" x="772.29" y="0">&amp;</tspan><tspan class="ag" x="785.6" y="0">for=state:*</tspan><tspan class="ai" x="932.07" y="0">&amp;</tspan><tspan class="ad" x="945.39" y="0">key=stringofcharactersandnumbers</tspan></text>
   </g>
 </svg>
